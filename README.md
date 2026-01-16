@@ -1,4 +1,4 @@
-# [zhijie-group.github.io](https://zhijie-group.github.io/)
+# [SJTU-DENG-Lab.github.io](https://SJTU-DENG-Lab.github.io/)
 
 This git repo hosts all content displayed on the website of DENG Lab @ SJTU.
 
@@ -9,8 +9,8 @@ This git repo hosts all content displayed on the website of DENG Lab @ SJTU.
 2. Run the following commands:
 
 ```bash
-git clone https://github.com/zhijie-group/zhijie-group.github.io.git
-cd zhijie-group.github.io
+git clone https://github.com/SJTU-DENG-Lab/SJTU-DENG-Lab.github.io.git
+cd SJTU-DENG-Lab.github.io
 hugo server
 ```
 
