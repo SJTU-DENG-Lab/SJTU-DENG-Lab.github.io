@@ -11,11 +11,11 @@ draft = false
       caption = "**Left**: vanilla top-2 MoE. **Right**: AdaMoE with null experts."
 +++
 
-{{< socialBadges paper="https://arxiv.org/pdf/2406.13233" code="https://github.com/zhijie-group/AdaMoE" >}}
+{{< socialBadges paper="https://arxiv.org/pdf/2406.13233" code="https://github.com/SJTU-DENG-Lab/AdaMoE" >}}
 
-<!-- Code: https://github.com/zhijie-group/SIFT
+<!-- Code: https://github.com/SJTU-DENG-Lab/SIFT
 
-Paper: https://github.com/zhijie-group/SIFT/blob/main/paper.pdf -->
+Paper: https://github.com/SJTU-DENG-Lab/SIFT/blob/main/paper.pdf -->
 
 {{< justify >}}
 LongCat-Flash[1] just showed a clean, large-scale deployment of token-adaptive MoE with zero-computation (identity) experts—-activating 18.6–31.3B parameters per token (~27B on average) inside a 560B MoE. Each layer mixes 512 FFN experts + 256 zero-compute experts, the router selects Top-12, and the average true-expert picks settle around ~8 thanks to a PID-style budget controller; device-level load balancing and ScMoE (shortcut-connected MoE) keep the system efficient. They present the model as a non-thinking foundation model with strong throughput/cost metrics.

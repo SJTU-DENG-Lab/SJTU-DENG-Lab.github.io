@@ -1,6 +1,6 @@
 <!doctype html><html lang=en dir=auto><head><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css rel=stylesheet><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow">
 <title>LoPA: Scaling dLLM Inference via Lookahead Parallel Decoding | DENG Lab @ SJTU</title>
-<meta name=keywords content><meta name=description content="LoPA: Scaling dLLM Inference"><meta name=author content="Chenkai Xu*, Yijie Jin*, Jiajun Li, Yi Tu, Guoping Long, Dandan Tu, Tianqi Hou, Junchi Yan, Zhijie Deng †"><link rel=canonical href=https://zhijie-group.github.io/blogs/LoPA/><link crossorigin=anonymous href=/assets/css/stylesheet.c0b173c8753dc0cb5a0e3b2c0cd5a4fa0869fbd82e03d31553bf8232b3914c61.css integrity="sha256-wLFzyHU9wMtaDjssDNWk+ghp+9guA9MVU7+CMrORTGE=" rel="preload stylesheet" as=style><link rel=icon href=https://zhijie-group.github.io/favicon.ico><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33">
+<meta name=keywords content><meta name=description content="LoPA: Scaling dLLM Inference"><meta name=author content="Chenkai Xu*, Yijie Jin*, Jiajun Li, Yi Tu, Guoping Long, Dandan Tu, Tianqi Hou, Junchi Yan, Zhijie Deng †"><link rel=canonical href=https://SJTU-DENG-Lab.github.io/blogs/LoPA/><link crossorigin=anonymous href=/assets/css/stylesheet.c0b173c8753dc0cb5a0e3b2c0cd5a4fa0869fbd82e03d31553bf8232b3914c61.css integrity="sha256-wLFzyHU9wMtaDjssDNWk+ghp+9guA9MVU7+CMrORTGE=" rel="preload stylesheet" as=style><link rel=icon href=https://SJTU-DENG-Lab.github.io/favicon.ico><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33">
 <script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js></script>
 <script>MathJax={tex:{displayMath:[["\\[","\\]"],["$$","$$"]],inlineMath:[["\\(","\\)"],["$","$"]]}}</script>
 <style>
@@ -16,7 +16,7 @@
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script>
-<header class=header><nav class=nav><div class=logo><a href=https://zhijie-group.github.io/ accesskey=h title="DENG Lab @ SJTU (Alt + H)"><img id=logo-image src=/img/logo-new.png alt="DENG Lab @ SJTU" height=40></a><div class=logo-switches><ul class=lang-switch></ul></div></div><ul id=menu><li><a href=https://zhijie-group.github.io/home/ title=Home><span>Home</span></a></li><li><a href=https://zhijie-group.github.io/blogs/ title=Blogs><span>Blogs</span></a></li><li><a href=https://zhijie-group.github.io/people/ title=People><span>People</span></a></li><li><a href=https://zhijie-group.github.io/publications/ title=Publications><span>Publications</span></a></li><li><a href=https://zhijie-group.github.io/contact/ title=Contact><span>Contact</span></a></li></ul></nav></header>
+<header class=header><nav class=nav><div class=logo><a href=https://SJTU-DENG-Lab.github.io/ accesskey=h title="DENG Lab @ SJTU (Alt + H)"><img id=logo-image src=/img/logo-new.png alt="DENG Lab @ SJTU" height=40></a><div class=logo-switches><ul class=lang-switch></ul></div></div><ul id=menu><li><a href=https://SJTU-DENG-Lab.github.io/home/ title=Home><span>Home</span></a></li><li><a href=https://SJTU-DENG-Lab.github.io/blogs/ title=Blogs><span>Blogs</span></a></li><li><a href=https://SJTU-DENG-Lab.github.io/people/ title=People><span>People</span></a></li><li><a href=https://SJTU-DENG-Lab.github.io/publications/ title=Publications><span>Publications</span></a></li><li><a href=https://SJTU-DENG-Lab.github.io/contact/ title=Contact><span>Contact</span></a></li></ul></nav></header>
 
 <main class=main>
 <article class=post-single>
@@ -27,7 +27,7 @@
 
 <div class=post-content>
 
-<p><strong>Github:</strong> <a href="https://github.com/zhijie-group/LoPA">https://github.com/zhijie-group/LoPA</a></p>
+<p><strong>Github:</strong> <a href="https://github.com/SJTU-DENG-Lab/LoPA">https://github.com/SJTU-DENG-Lab/LoPA</a></p>
 
 <p>We introduce the Lookahead Parallel Decoding (LoPA) algorithm for diffusion large language models (dLLMs) inference. LoPA enables up to 10.1 tokens per forward pass (TPF) for state-of-the-art dLLMs—without compromising predictive performance. This represents an unprecedented degree of parallelism, a capability unmatched by previous dLLM decoding methods. Under multi-device deployment, our specialized system LoPA-Dist achieves a single-sample throughput of 1073.9 tokens per second.</p>
 
@@ -326,5 +326,5 @@ $$C(B_j) = \frac{1}{|M_{B_j}|} \sum_{i \in M_{B_j}} \text{Conf}(i)$$
 <footer class=post-footer><ul class=post-tags></ul></footer>
 </article>
 </main>
-<footer class=footer><span>&copy; 2025 <a href=https://zhijie-group.github.io/>DENG Lab @ SJTU</a></span></footer>
+<footer class=footer><span>&copy; 2025 <a href=https://SJTU-DENG-Lab.github.io/>DENG Lab @ SJTU</a></span></footer>
 </body></html>

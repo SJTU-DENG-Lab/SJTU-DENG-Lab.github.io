@@ -13,7 +13,7 @@ summary = "We introduce the Lookahead Parallel Decoding (LoPA) algorithm for dif
       caption = "Overview of Lookahead Parallel Decoding (LoPA)."
 +++
 
-<p><strong>Github:</strong> <a href="https://github.com/zhijie-group/LoPA">https://github.com/zhijie-group/LoPA</a></p>
+<p><strong>Github:</strong> <a href="https://github.com/SJTU-DENG-Lab/LoPA">https://github.com/SJTU-DENG-Lab/LoPA</a></p>
 
 <p>We introduce the Lookahead Parallel Decoding (LoPA) algorithm for diffusion large language models (dLLMs) inference. LoPA enables up to 10.1 tokens per forward pass (TPF) for state-of-the-art dLLMs—without compromising predictive performance. This represents an unprecedented degree of parallelism, a capability unmatched by previous dLLM decoding methods. Under multi-device deployment, our specialized system LoPA-Dist achieves a single-sample throughput of 1073.9 tokens per second.</p>
 
@@ -751,7 +751,7 @@ The results illustrate the trade-off between inference throughput and generation
 
 <h2>Future Works</h2>
 
-<p>We are working on a new inference framework for dLLMs named Diffulex, which is flexible and easy to extend. Diffulex supports multiple decoding strategies including D2F, BlockDiffusion, and Fast-dLLM-v2, which is soon to be released. <strong>You can find the code <a href="https://github.com/zhijie-group/Diffulex">here</a>.</strong></p>
+<p>We are working on a new inference framework for dLLMs named Diffulex, which is flexible and easy to extend. Diffulex supports multiple decoding strategies including D2F, BlockDiffusion, and Fast-dLLM-v2, which is soon to be released. <strong>You can find the code <a href="https://github.com/SJTU-DENG-Lab/Diffulex">here</a>.</strong></p>
 
 <p>We will explore adapting LoPA to SDAR and other confidence-driven diffusion language models to further demonstrate its generalizability and effectiveness across diverse model architectures.</p>
 

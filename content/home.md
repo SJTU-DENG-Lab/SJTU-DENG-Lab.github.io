@@ -65,7 +65,7 @@ Current research interests focus on:
 {{< /newsEntry >}}
 
 {{< newsEntry >}}
-**06/2025**: [L^2VSD](#) and [Meta-Unlearning on Diffusion Models](https://arxiv.org/pdf/2410.12777) are accepted to ICCV! 🎉 
+**06/2025**: [L^2VSD](https://openaccess.thecvf.com/content/ICCV2025/papers/Lei_Advancing_Text-to-3D_Generation_with_Linearized_Lookahead_Variational_Score_Distillation_ICCV_2025_paper.pdf) and [Meta-Unlearning on Diffusion Models](https://openaccess.thecvf.com/content/ICCV2025/papers/Gao_Meta-Unlearning_on_Diffusion_Models_Preventing_Relearning_Unlearned_Concepts_ICCV_2025_paper.pdf) are accepted to ICCV! 🎉 
 {{< /newsEntry >}}
 
 {{< newsEntry >}}
@@ -137,4 +137,4 @@ Current research interests focus on:
 
 {{< four_images src1="/img/sponsors/NSFC.jpg" src2="/img/sponsors/shkw.jpg" src3="/img/sponsors/OPPO-Logo.png" src4="/img/sponsors/bc.png" alt2="shkw" alt1="nsfc" alt3="oppo" alt4="baichuan" width1="23%" width2="27%" width3="23%" width4="25%" title="">}}
 {{< four_images src1="/img/sponsors/ks.jpg" src2="/img/sponsors/hw.png" src3="/img/sponsors/ts.png" src4="/img/sponsors/zhipu.png" alt2="hw" alt1="ks" alt3="ts" alt4="zhipu" width1="23%" width2="27%" width3="23%" width4="25%" title="">}}
-{{< four_images src1="/img/sponsors/alimama.png" src2="/img/sponsors/em.jpg" src3="/img/sponsors/em.jpg" src4="/img/sponsors/em.jpg" alt2="white-linen" alt1="alimama" alt3="white-linen" alt4="white-linen" width1="23%" width2="27%" width3="23%" width4="25%" title="">}}
+{{< four_images src1="/img/sponsors/alimama.png" src2="/img/sponsors/ant.png" src3="/img/sponsors/transsion.png" src4="/img/sponsors/sii.avif" alt2="white-linen" alt1="alimama" alt3="white-linen" alt4="white-linen" width1="23%" width2="27%" width3="23%" width4="25%" title="">}}

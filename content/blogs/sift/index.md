@@ -12,11 +12,11 @@ draft = false
 +++
 
 
-{{< socialBadges paper="https://github.com/zhijie-group/SIFT/blob/main/paper.pdf" code="https://github.com/zhijie-group/SIFT" >}}
+{{< socialBadges paper="https://github.com/SJTU-DENG-Lab/SIFT/blob/main/paper.pdf" code="https://github.com/SJTU-DENG-Lab/SIFT" >}}
 
-<!-- Code: https://github.com/zhijie-group/SIFT
+<!-- Code: https://github.com/SJTU-DENG-Lab/SIFT
 
-Paper: https://github.com/zhijie-group/SIFT/blob/main/paper.pdf -->
+Paper: https://github.com/SJTU-DENG-Lab/SIFT/blob/main/paper.pdf -->
 
 ## Introduction & Motivation
 
@@ -162,7 +162,7 @@ If you find our paper or  codebase useful, please consider citing:
   title={SIFT: Grounding LLM Reasoning in Contexts via Stickers},
   author={Zeng, Zihao and Huang, Xuyao and Li, Boxiu and Deng, Zhijie},
   year={2025},
-  url={https://github.com/zhijie-group/SIFT/blob/main/paper.pdf}
+  url={https://github.com/SJTU-DENG-Lab/SIFT/blob/main/paper.pdf}
 }
 ```
 

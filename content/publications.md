@@ -43,7 +43,7 @@ Hongcheng Gao, Tianyu Pang†, Chao Du, Taihang Hu, Zhijie Deng†, Min Lin
 Yu Lei, Bingde Liu, Qingsong Xie, Haonan Lu, Zhijie Deng†
 {{< /publication >}}
 
-{{< publication title="Orthus: Autoregressive Interleaved Image-Text Generation with Modality-Specific Heads" venue="ICML 2025" paperLink="https://arxiv.org/pdf/2412.00127" codeLink="https://github.com/zhijie-group/Orthus" award="" project="" data-topic="Large Language Models" >}}
+{{< publication title="Orthus: Autoregressive Interleaved Image-Text Generation with Modality-Specific Heads" venue="ICML 2025" paperLink="https://arxiv.org/pdf/2412.00127" codeLink="https://github.com/SJTU-DENG-Lab/Orthus" award="" project="" data-topic="Large Language Models" >}}
 Siqi Kou, Jiachun Jin, Zhihong Liu, Chang Liu, Ye Ma, Jian Jia, Quan Chen, Peng Jiang, Zhijie Deng†
 {{< /publication >}}
 

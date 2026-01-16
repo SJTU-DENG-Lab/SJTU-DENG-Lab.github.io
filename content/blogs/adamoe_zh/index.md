@@ -11,7 +11,7 @@ draft = false
       caption = "**左图**: 标准的 top-2 MoE。 **右图**: 引入了“空专家”的AdaMoE模型。"
 +++
 
-{{< socialBadges paper="https://arxiv.org/pdf/2406.13233" code="https://github.com/zhijie-group/AdaMoE" >}}
+{{< socialBadges paper="https://arxiv.org/pdf/2406.13233" code="https://github.com/SJTU-DENG-Lab/AdaMoE" >}}
 
 {{< justify >}}
 LongCat-Flash[1] 近期展示了一种token级别自适应的MoE的大规模部署方案。该方案利用零计算（恒等）专家，在560B MoE模型中，每个token激活18.6B~31.3B的参数量（平均约27B）。每一层混合了512个真专家和256个零计算专家，每次选择top-12的专家，并且由于采用了PID式预算控制器，平均真专家选择数量稳定在约8个。设备级负载均衡和ScMoE保证了系统的效率。他们将该模型呈现为一个具有强大吞吐量/成本指标的非思考模型。
