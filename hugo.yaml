@@ -1,4 +1,4 @@
-baseURL: 'https://zhijie-group.github.io/'
+baseURL: 'https://SJTU-DENG-Lab.github.io/'
 languageCode: en-us
 title: 'DENG Lab @ SJTU'
 theme: 'PaperMod'
@@ -42,7 +42,7 @@ params:
   # Optional: show social icons on home/profile if enabled by theme
   socialIcons:
     - name: github
-      url: "https://github.com/zhijie-group"
+      url: "https://github.com/SJTU-DENG-Lab"
     - name: x
       url: "https://x.com/sjtudenglab"
     - name: zhihu
@@ -77,7 +77,7 @@ menu:
       url: "https://www.zhihu.com/people/SJTUDengLab"
       weight: 120
     - name: "GitHub"
-      url: "https://github.com/zhijie-group"
+      url: "https://github.com/SJTU-DENG-Lab"
       weight: 120
     
     
