@@ -8,7 +8,7 @@ summary: people
 ### Lab Members
 
 {{< lab_members_grid >}}
-{{< lab_member name="Zhijie Deng" role="Assistant Professor" image="dzj.jpg" academic="https://thudzj.github.io/"  twitter="https://x.com/ZhijieDeng2">}}
+{{< lab_member name="Zhijie Deng" role="Associate Professor" image="dzj.jpg" academic="https://thudzj.github.io/"  twitter="https://x.com/ZhijieDeng2">}}
 
 <!-- {{< lab_member name="Yibo Miao" role="Master Student" image="unknown.jpg" academic="https://scholar.google.com/citations?user=PaVrM_kAAAAJ&hl=zh-CN">}} -->
 
