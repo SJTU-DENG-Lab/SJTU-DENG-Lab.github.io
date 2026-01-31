@@ -1,5 +1,16 @@
 [
     {
+        "title": "Diffusion LLMs Can Do Faster-Than-AR Inference via Discrete Diffusion Forcing",
+        "authors": "Xu Wang, Chenkai Xu, Yijie Jin, Jiachun Jin, Hao Zhang, Zhijie Deng†",
+        "venue": "ICLR 2026",
+        "pdf": "https://arxiv.org/pdf/2508.09192",
+        "presentation": "",
+        "award": "",
+        "project": "",
+        "tag": "Large Language Models",
+        "date": "04/2026"
+    },
+    {
         "title": "Neural Eigenfunctions Are Structured Representation Learners",
         "authors": "Zhijie Deng*, Jiaxin Shi*, Hao Zhang, Peng Cui, Cewu Lu, Jun Zhu",
         "venue": "TPAMI 2025",

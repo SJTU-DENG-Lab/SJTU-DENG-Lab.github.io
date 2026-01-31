@@ -5,6 +5,14 @@ url: "/publications/"
 summary: publications
 ---
 
+### 2026
+
+{{< publication title="Diffusion LLMs Can Do Faster-Than-AR Inference via Discrete Diffusion Forcing" venue="ICLR 2026" paperLink="https://arxiv.org/pdf/2508.09192" codeLink="" award="" project="" data-topic="Large Language Models" >}}
+Xu Wang, Chenkai Xu, Yijie Jin, Jiachun Jin, Hao Zhang, Zhijie Deng†
+{{< /publication >}}
+
+&emsp;
+
 ### 2025
 
 {{< publication title="Neural Eigenfunctions Are Structured Representation Learners" venue="TPAMI 2025" paperLink="https://arxiv.org/pdf/2210.12637.pdf" codeLink="" award="" project="" data-topic="Large Language Models" >}}
