@@ -1,7 +1,163 @@
 {{- with .cxt}} {{/* Apply proper context from dict */}}
-{{- if (and .Params.cover.image (not $.isHidden)) }}
+{{- if (and (or .Params.cover.image .Params.cover.images) (not $.isHidden)) }}
 {{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) }}
 {{- $loading := cond $.IsSingle "eager" "lazy" }}
+
+{{- /* Check if multiple images carousel */}}
+{{- if .Params.cover.images }}
+<style>
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+  }
+  
+  .carousel-slide {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-slide.active {
+    display: block;
+    animation: fadeInOut 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeInOut {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+  }
+  
+  .carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .carousel-dot.active {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .carousel-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+    transition: background-color 0.3s;
+  }
+
+  .carousel-nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .carousel-nav-btn.prev {
+    left: 10px;
+  }
+
+  .carousel-nav-btn.next {
+    right: 10px;
+  }
+</style>
+
+<figure class="entry-cover carousel-container" id="coverCarousel">
+  {{- range $index, $image := .Params.cover.images }}
+  <img class="carousel-slide {{if eq $index 0}}active{{end}}" 
+       loading="{{$loading}}" 
+       src="{{ (path.Join $.RelPermalink $image) | absURL }}" 
+       alt="{{ $alt }}"
+       data-index="{{ $index }}">
+  {{- end }}
+  
+  {{- if gt (len .Params.cover.images) 1 }}
+  <button class="carousel-nav-btn prev" onclick="changeSlide(-1)">❮</button>
+  <button class="carousel-nav-btn next" onclick="changeSlide(1)">❯</button>
+  
+  <div class="carousel-controls">
+    {{- range $index, $_ := .Params.cover.images }}
+    <span class="carousel-dot {{if eq $index 0}}active{{end}}" onclick="goToSlide({{ $index }})"></span>
+    {{- end }}
+  </div>
+  {{- end }}
+  
+  {{/*  Display Caption  */}}
+  {{- if $.IsSingle }}
+    {{ with .Params.cover.caption }}<p>{{ . | markdownify }}</p>{{- end }}
+  {{- end }}
+</figure>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.carousel-slide');
+  const totalSlides = slides.length;
+  let autoSlideTimer;
+
+  function showSlide(index) {
+    if (index >= totalSlides) currentSlide = 0;
+    if (index < 0) currentSlide = totalSlides - 1;
+    
+    slides.forEach(slide => slide.classList.remove('active'));
+    const dots = document.querySelectorAll('.carousel-dot');
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    if (slides[currentSlide]) {
+      slides[currentSlide].classList.add('active');
+    }
+    if (dots[currentSlide]) {
+      dots[currentSlide].classList.add('active');
+    }
+  }
+
+  function changeSlide(n) {
+    clearTimeout(autoSlideTimer);
+    currentSlide += n;
+    showSlide(currentSlide);
+    startAutoSlide();
+  }
+
+  function goToSlide(n) {
+    clearTimeout(autoSlideTimer);
+    currentSlide = n;
+    showSlide(currentSlide);
+    startAutoSlide();
+  }
+
+  function startAutoSlide() {
+    if (totalSlides > 1) {
+      autoSlideTimer = setTimeout(() => {
+        currentSlide++;
+        showSlide(currentSlide);
+        startAutoSlide();
+      }, 4000);
+    }
+  }
+
+  // Initialize carousel
+  showSlide(currentSlide);
+  startAutoSlide();
+</script>
+
+{{- else }}
+{{/* Single image - original behavior */}}
 <figure class="entry-cover">
     {{- $responsiveImages := (.Params.cover.responsiveImages | default site.Params.cover.responsiveImages) | default true }}
     {{- $addLink := (and site.Params.cover.linkFullImages $.IsSingle) }}
@@ -39,5 +195,7 @@
         {{ with .Params.cover.caption }}<p>{{ . | markdownify }}</p>{{- end }}
     {{- end }}
 </figure>
+{{- end }}
+
 {{- end }}{{/* End image */}}
 {{- end -}}{{/* End context */ -}}

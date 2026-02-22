@@ -1,5 +1,27 @@
 [
     {
+        "title": "LogCD: Local-to-global Consistency Distillation for Few-step Image Generation",
+        "authors": "Qingsong Xie†, Zhenyi Liao, Chen Chen, Zhijie Deng†, Haonan Lu",
+        "venue": "CVPR 2026",
+        "pdf": "#",
+        "presentation": "",
+        "award": "",
+        "project": "",
+        "tag": "Generative Models, Diffusion Models",
+        "date": "06/2026"
+    },
+    {
+        "title": "Mantis: A Versatile Vision-Language-Action Model with Disentangled Visual Foresight",
+        "authors": "Yi Yang, Xueqi Li, Yiyang Chen, Jin Song, Yihan Wang, Zipeng Xiao, Jiadi Su, You Qiaoben, Pengfei Liu, Zhijie Deng†",
+        "venue": "CVPR 2026",
+        "pdf": "https://arxiv.org/pdf/2511.16175",
+        "presentation": "",
+        "award": "",
+        "project": "",
+        "tag": "Vision-Language-Action Models",
+        "date": "06/2026"
+    },
+    {
         "title": "Diffusion LLMs Can Do Faster-Than-AR Inference via Discrete Diffusion Forcing",
         "authors": "Xu Wang, Chenkai Xu, Yijie Jin, Jiachun Jin, Hao Zhang, Zhijie Deng†",
         "venue": "ICLR 2026",

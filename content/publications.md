@@ -7,6 +7,14 @@ summary: publications
 
 ### 2026
 
+{{< publication title="LogCD: Local-to-global Consistency Distillation for Few-step Image Generation" venue="CVPR 2026" paperLink="#" codeLink="" award="" project="" data-topic="Generative Models, Diffusion Models" >}}
+Qingsong Xie†, Zhenyi Liao, Chen Chen, Zhijie Deng†, Haonan Lu
+{{< /publication >}}
+
+{{< publication title="Mantis: A Versatile Vision-Language-Action Model with Disentangled Visual Foresight" venue="CVPR 2026" paperLink="https://arxiv.org/pdf/2511.16175" codeLink="" award="" project="" data-topic="Vision-Language-Action Models" >}}
+Yi Yang, Xueqi Li, Yiyang Chen, Jin Song, Yihan Wang, Zipeng Xiao, Jiadi Su, You Qiaoben, Pengfei Liu, Zhijie Deng†
+{{< /publication >}}
+
 {{< publication title="Diffusion LLMs Can Do Faster-Than-AR Inference via Discrete Diffusion Forcing" venue="ICLR 2026" paperLink="https://arxiv.org/pdf/2508.09192" codeLink="" award="" project="" data-topic="Large Language Models" >}}
 Xu Wang, Chenkai Xu, Yijie Jin, Jiachun Jin, Hao Zhang, Zhijie Deng†
 {{< /publication >}}

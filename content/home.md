@@ -5,28 +5,34 @@ type: "home"
 url: "/home/"
 summary: "home page for DENG Lab @ SJTU"
 cover:
-  image: img/all-people.jpg
+  images:
+    # - img/all-people-2024.jpg
+    - img/all-people-2025.jpg
+    - img/mantis.png
+    - img/birth-20260130.jpg
   alt: "DENG Lab @ SJTU"
-  caption: "DENG Lab @ SJTU"
+  # caption: "DENG Lab @ SJTU"
 ---
  
 {{< justify >}}
 
-DENG Lab is affiliated with [Qing Yuan Research Institute](http://www.qingyuan.sjtu.edu.cn/) and [School of Computer Science](https://www.cs.sjtu.edu.cn/) at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/), working on pioneering novel methods and theories that enhance the efficiency, efficacy, reliability, and trustworthiness of machine learning approaches, especially for generative AI. Our members conduct comprehensive research across the entire machine learning cycle, encompassing data, methods, models, and evaluation.
+DENG Lab is affiliated with [School of Computer Science](https://www.cs.sjtu.edu.cn/) at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/), working on pioneering novel methods and theories that enhance the efficiency, efficacy, reliability, and trustworthiness of generative AI.
+<!-- % Our members conduct comprehensive research across the entire machine learning cycle, encompassing data, methods, models, and evaluation. -->
 
 Current research interests focus on:
 
-- Model efficiency 
-  - Inference acceleration for large language and diffusion models
-  - Novel methods and architectures for generative modeling
+- Diffusion LLM
+  - Traning/Inference/RL infra
+  - Cost-effective architectures and algorithms
+  <!-- - Novel methods and architectures for generative modeling -->
 
-- Data efficiency
+<!-- - Data efficiency
 	- Data selection, active learning, and data difficulty quantification
-	- Deep spectral methods
+	- Deep spectral methods -->
 
-- Modality efficiency
-  - Unified modeling methods, learning principles, and architectures for texts, images, videos, and beyond
-  - Applications of efficient world models in Embodied AI
+- Cross-modality Generation
+  - Unified models covering text, image, and video generation
+  - Applications in world models and VLA
 
 {{< /justify >}}
 
@@ -37,7 +43,15 @@ Current research interests focus on:
 <!-- 🎉 -->
 
 {{< newsEntry >}}
-**10/2025**: [Neural Eigenmap](https://arxiv.org/pdf/2210.12637) is accepted by TPAMI!
+**02/2026**: [Mantis](https://arxiv.org/pdf/2511.16175) and [LogCD](#) is accepted by CVPR 2026! 🎉 
+{{< /newsEntry >}}
+
+{{< newsEntry >}}
+**01/2026**: [D2F](https://arxiv.org/pdf/2508.09192) is accepted by ICLR 2026! 🎉 
+{{< /newsEntry >}}
+
+{{< newsEntry >}}
+**10/2025**: [Neural Eigenmap](https://arxiv.org/pdf/2210.12637) is accepted by TPAMI! 🎉 
 {{< /newsEntry >}}
 
 {{< newsEntry >}}
