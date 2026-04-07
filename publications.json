@@ -1,5 +1,27 @@
 [
     {
+        "title": "UniCM: A Unified Consistency Model For Efficient Multimodal Generation and Understanding",
+        "authors": "Chenkai Xu, Xu Wang, Zhenyi Liao, Yishun Li, TianQi Hou, Zhijie Deng†",
+        "venue": "ACL 2026",
+        "pdf": "https://arxiv.org/pdf/2502.05415.pdf",
+        "presentation": "",
+        "award": "",
+        "project": "",
+        "tag": "Generative Models, Consistency Models, Multimodal Models",
+        "date": "08/2026"
+    },
+    {
+        "title": "TPS-Bench: Evaluating AI Agents' Tool Planning & Scheduling Abilities in Compounding Tasks",
+        "authors": "Hanwen Xu, Xuyao Huang, Yuzhe Liu, Zhijie Deng†",
+        "venue": "Findings of ACL 2026",
+        "pdf": "https://arxiv.org/pdf/2511.01527.pdf",
+        "presentation": "",
+        "award": "",
+        "project": "",
+        "tag": "Large Language Models, AI Agents",
+        "date": "08/2026"
+    },
+    {
         "title": "LogCD: Local-to-global Consistency Distillation for Few-step Image Generation",
         "authors": "Qingsong Xie†, Zhenyi Liao, Chen Chen, Zhijie Deng†, Haonan Lu",
         "venue": "CVPR 2026",

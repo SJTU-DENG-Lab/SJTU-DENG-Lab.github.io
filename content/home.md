@@ -38,12 +38,16 @@ Current research interests focus on:
 
 &emsp;
 
-### News 
+### News
 
 <!-- 🎉 -->
 
 {{< newsEntry >}}
-**02/2026**: [Mantis](https://arxiv.org/pdf/2511.16175) and [LogCD](#) is accepted by CVPR 2026! 🎉 
+**04/2026**: [UniCM](https://arxiv.org/pdf/2502.05415.pdf) and [TPS-Bench](https://arxiv.org/pdf/2511.01527.pdf) are accepted by ACL 2026! 🎉
+{{< /newsEntry >}}
+
+{{< newsEntry >}}
+**02/2026**: [Mantis](https://arxiv.org/pdf/2511.16175) and [LogCD](#) is accepted by CVPR 2026! 🎉
 {{< /newsEntry >}}
 
 {{< newsEntry >}}
