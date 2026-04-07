@@ -20,10 +20,10 @@ DENG Lab is affiliated with [School of Computer Science](https://www.cs.sjtu.edu
 <!-- % Our members conduct comprehensive research across the entire machine learning cycle, encompassing data, methods, models, and evaluation. -->
 
 Current research interests focus on:
-
+<!-- 
 - Diffusion LLM
   - Traning/Inference/RL infra
-  - Cost-effective architectures and algorithms
+  - Cost-effective architectures and algorithms -->
   <!-- - Novel methods and architectures for generative modeling -->
 
 <!-- - Data efficiency
@@ -33,6 +33,8 @@ Current research interests focus on:
 - Cross-modality Generation
   - Unified models covering text, image, and video generation
   - Applications in world models and VLA
+  - Cost-effective architectures and algorithms
+  - Traning/Inference/RL infra
 
 {{< /justify >}}
 

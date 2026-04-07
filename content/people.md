@@ -30,10 +30,6 @@ summary: people
 
 {{< lab_member name="Zetong Zhou" role="Incoming PhD Student" image="unknown.jpg" academic="#">}}
 
-{{< lab_member name="Zihao Zeng" role="Master Student" image="zzh.jpg" academic="https://cengzihao.github.io/">}}
-
-{{< lab_member name="Chang Liu" role="Master Student" image="lc.jpg" academic="#">}}
-
 {{< lab_member name="Xu Wang" role="Master Student" image="unknown.jpg" academic="#">}}
 
 {{< lab_member name="Hanwen Xu" role="Master Student" image="unknown.jpg" academic="#">}}
@@ -50,6 +46,8 @@ summary: people
 
 {{< lab_member name="Yuji Ren" role="Incoming Master Student" image="unknown.jpg" academic="#">}}
 
+{{< lab_member name="Xiang Li" role="Incoming Master Student" image="unknown.jpg" academic="#">}}
+
 <!-- {{< lab_member name="Yuzhe Liu" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
 
 <!-- {{< lab_member name="Boxiu Li" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
@@ -58,31 +56,36 @@ summary: people
 
 {{< lab_member name="Zheng Li" role="Undergrad Student" image="unknown.jpg" academic="#">}}
 
-{{< lab_member name="Chuanyu Zhou" role="Undergrad Student" image="unknown.jpg" academic="#">}}
+<!-- {{< lab_member name="Chuanyu Zhou" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
 
-{{< lab_member name="Yudong Qi" role="Undergrad Student" image="unknown.jpg" academic="#">}}
+<!-- {{< lab_member name="Yudong Qi" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
 
 {{< lab_member name="Zhijie Wei" role="Undergrad Student" image="unknown.jpg" academic="#">}}
 
-{{< lab_member name="Yuhan Cao" role="Undergrad Student" image="unknown.jpg" academic="#">}}
+<!-- {{< lab_member name="Yuhan Cao" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
 
 {{< lab_member name="Feiyun Ning" role="Undergrad Student" image="unknown.jpg" academic="#">}}
 
 {{< lab_member name="Lianguan Feng" role="Undergrad Student" image="unknown.jpg" academic="#">}}
 
-{{< lab_member name="Yongchen Zhao" role="Undergrad Student" image="unknown.jpg" academic="#">}}
+<!-- {{< lab_member name="Yongchen Zhao" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
 
-{{< lab_member name="Haomin Ma" role="Undergrad Student" image="unknown.jpg" academic="#">}}
+<!-- {{< lab_member name="Haomin Ma" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
 
 {{< lab_member name="Wenxin Chen" role="Undergrad Student" image="unknown.jpg" academic="#">}}
 
-{{< lab_member name="Yuxuan Zheng" role="Undergrad Student" image="unknown.jpg" academic="#">}}
+<!-- {{< lab_member name="Yuxuan Zheng" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
+
+<!-- {{< lab_member name="Zihao Zeng" role="Master Student" image="zzh.jpg" academic="https://cengzihao.github.io/">}} -->
+
+<!-- {{< lab_member name="Chang Liu" role="Master Student" image="lc.jpg" academic="#">}} -->
 
 {{< /lab_members_grid >}}
 
 ### Alumni
 {{< alumni >}}
-{{< alumni_entry name="Yibo Miao" description="Master, 2022-2025; now Researcher at Kimi." homepage="https://scholar.google.com/citations?user=PaVrM_kAAAAJ&hl=zh-CN">}} 
+{{< alumni_entry name="Zihao Zeng" description="Master, 2023-2026; now Researcher at ByteDance Seed." homepage="https://cengzihao.github.io/">}} 
+{{< alumni_entry name="Chang Liu" description="Master, 2023-2026." homepage="#">}} 
 {{< alumni_entry name="Zhenyi Liao" description="Master, 2022-2025; now Researcher at OPPO AI Center." homepage="https://openreview.net/profile?id=~Zhenyi_Liao1">}} 
 {{< alumni_entry name="Zipeng Xiao" description="Master, 2022-2025; incoming PhD Student at CUHK." homepage="https://scholar.google.com/citations?user=guWeBb0AAAAJ&hl=en">}} 
 {{< alumni_entry name="Bokai Lin" description="Undergrad Intern, 2023-2025; now PhD Student at SJTU & SII." homepage="https://openreview.net/profile?id=~Bokai_Lin1">}} 
