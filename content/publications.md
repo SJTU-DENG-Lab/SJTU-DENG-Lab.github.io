@@ -7,6 +7,14 @@ summary: publications
 
 ### 2026
 
+{{< publication title="UniCM: A Unified Consistency Model For Efficient Multimodal Generation and Understanding" venue="ACL 2026" paperLink="https://arxiv.org/pdf/2502.05415.pdf" codeLink="" award="" project="" data-topic="Generative Models, Consistency Models, Multimodal Models" >}}
+Chenkai Xu, Xu Wang, Zhenyi Liao, Yishun Li, TianQi Hou, Zhijie Deng†
+{{< /publication >}}
+
+{{< publication title="TPS-Bench: Evaluating AI Agents' Tool Planning & Scheduling Abilities in Compounding Tasks" venue="Findings of ACL 2026" paperLink="https://arxiv.org/pdf/2511.01527.pdf" codeLink="" award="" project="" data-topic="Large Language Models, AI Agents" >}}
+Hanwen Xu, Xuyao Huang, Yuzhe Liu, Zhijie Deng†
+{{< /publication >}}
+
 {{< publication title="LogCD: Local-to-global Consistency Distillation for Few-step Image Generation" venue="CVPR 2026" paperLink="#" codeLink="" award="" project="" data-topic="Generative Models, Diffusion Models" >}}
 Qingsong Xie†, Zhenyi Liao, Chen Chen, Zhijie Deng†, Haonan Lu
 {{< /publication >}}
