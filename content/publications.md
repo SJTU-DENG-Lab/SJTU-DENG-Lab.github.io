@@ -7,11 +7,27 @@ summary: publications
 
 ### 2026
 
-{{< publication title="UniCM: A Unified Consistency Model For Efficient Multimodal Generation and Understanding" venue="ACL 2026" paperLink="https://arxiv.org/pdf/2502.05415.pdf" codeLink="" award="" project="" data-topic="Generative Models, Consistency Models, Multimodal Models" >}}
+{{< publication title="Fast and Accurate Causal Parallel Decoding using Jacobi Forcing" venue="ICML 2026" paperLink="https://arxiv.org/abs/2512.14681" codeLink="" award="" project="" data-topic="Large Language Models" >}}
+Lanxiang Hu*, Siqi Kou*, Yichao Fu, Samyam Rajbhandari, Tajana Rosing, Yuxiong He, Zhijie Deng†, Hao Zhang†
+{{< /publication >}}
+
+{{< publication title="d3LLM: Ultra-Fast Diffusion LLM using Pseudo-Trajectory Distillation" venue="ICML 2026" paperLink="https://arxiv.org/abs/2601.07568" codeLink="" award="" project="" data-topic="Large Language Models" >}}
+Yu-Yang Qian, Junda Su, Lanxiang Hu, Peiyuan Zhang, Zhijie Deng, Peng Zhao, Hao Zhang
+{{< /publication >}}
+
+{{< publication title="LightningRL: Breaking the Accuracy–Parallelism Trade-off of Block-wise dLLMs via Reinforcement Learning" venue="ICML 2026" paperLink="https://arxiv.org/abs/2603.13319" codeLink="" award="" project="" data-topic="Large Language Models" >}}
+Yanzhe Hu, Yijie Jin, Pengfei Liu, Kai Yu, Zhijie Deng†
+{{< /publication >}}
+
+{{< publication title="Think-Then-Generate: Reasoning-Aware Text-to-Image Diffusion with LLM Encoders" venue="ICML 2026" paperLink="https://arxiv.org/abs/2601.10332" codeLink="" award="" project="" data-topic="Generative Models, Diffusion Models" >}}
+Siqi Kou*, Jiachun Jin*, Zetong Zhou*, Ye Ma, Yugang Wang, Quan Chen, Peng Jiang, Xiao Yang, Jun Zhu, Kai Yu, Zhijie Deng†
+{{< /publication >}}
+
+{{< publication title="UniCM: A Unified Consistency Model For Efficient Multimodal Generation and Understanding" venue="Findings of ACL 2026" paperLink="https://arxiv.org/pdf/2502.05415.pdf" codeLink="" award="" project="" data-topic="Generative Models, Consistency Models, Multimodal Models" >}}
 Chenkai Xu, Xu Wang, Zhenyi Liao, Yishun Li, TianQi Hou, Zhijie Deng†
 {{< /publication >}}
 
-{{< publication title="TPS-Bench: Evaluating AI Agents' Tool Planning & Scheduling Abilities in Compounding Tasks" venue="Findings of ACL 2026" paperLink="https://arxiv.org/pdf/2511.01527.pdf" codeLink="" award="" project="" data-topic="Large Language Models, AI Agents" >}}
+{{< publication title="TPS-Bench: Evaluating AI Agents' Tool Planning & Scheduling Abilities in Compounding Tasks" venue="ACL 2026" paperLink="https://arxiv.org/pdf/2511.01527.pdf" codeLink="" award="" project="" data-topic="Large Language Models, AI Agents" >}}
 Hanwen Xu, Xuyao Huang, Yuzhe Liu, Zhijie Deng†
 {{< /publication >}}
 

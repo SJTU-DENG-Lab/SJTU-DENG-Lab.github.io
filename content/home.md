@@ -19,7 +19,7 @@ cover:
 DENG Lab is affiliated with [School of Computer Science](https://www.cs.sjtu.edu.cn/) at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/), working on pioneering novel methods and theories that enhance the efficiency, efficacy, reliability, and trustworthiness of generative AI.
 <!-- % Our members conduct comprehensive research across the entire machine learning cycle, encompassing data, methods, models, and evaluation. -->
 
-Current research interests focus on:
+Current research interests focus on efficient cross-modality generation, including:
 <!-- 
 - Diffusion LLM
   - Traning/Inference/RL infra
@@ -30,7 +30,6 @@ Current research interests focus on:
 	- Data selection, active learning, and data difficulty quantification
 	- Deep spectral methods -->
 
-- Cross-modality Generation
   - Unified models covering text, image, and video generation
   - Applications in world models and VLA
   - Cost-effective architectures and algorithms
@@ -43,6 +42,10 @@ Current research interests focus on:
 ### News
 
 <!-- 🎉 -->
+
+{{< newsEntry >}}
+**05/2026**: Four papers are accepted by ICML 2026! Check out: [Jacobi Forcing](https://arxiv.org/abs/2512.14681), [d3LLM](https://arxiv.org/abs/2601.07568), [LightningRL](https://arxiv.org/abs/2603.13319), and [Think-Then-Generate](https://arxiv.org/abs/2601.10332)! 🎉
+{{< /newsEntry >}}
 
 {{< newsEntry >}}
 **04/2026**: [UniCM](https://arxiv.org/pdf/2502.05415.pdf) and [TPS-Bench](https://arxiv.org/pdf/2511.01527.pdf) are accepted by ACL 2026! 🎉

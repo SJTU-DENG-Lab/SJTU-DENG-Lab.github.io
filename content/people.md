@@ -86,6 +86,7 @@ summary: people
 {{< alumni >}}
 {{< alumni_entry name="Zihao Zeng" description="Master, 2023-2026; now Researcher at ByteDance Seed." homepage="https://cengzihao.github.io/">}} 
 {{< alumni_entry name="Chang Liu" description="Master, 2023-2026." homepage="#">}} 
+{{< alumni_entry name="Yibo Miao" description="Master, 2022-2025; now Researcher at Kimi." homepage="https://yibomiao.github.io/">}} 
 {{< alumni_entry name="Zhenyi Liao" description="Master, 2022-2025; now Researcher at OPPO AI Center." homepage="https://openreview.net/profile?id=~Zhenyi_Liao1">}} 
 {{< alumni_entry name="Zipeng Xiao" description="Master, 2022-2025; incoming PhD Student at CUHK." homepage="https://scholar.google.com/citations?user=guWeBb0AAAAJ&hl=en">}} 
 {{< alumni_entry name="Bokai Lin" description="Undergrad Intern, 2023-2025; now PhD Student at SJTU & SII." homepage="https://openreview.net/profile?id=~Bokai_Lin1">}} 
