@@ -7,6 +7,10 @@ summary: publications
 
 ### 2026
 
+{{< publication title="ProductWebGen: Benchmarking Multimodal Product Webpage Generation" venue="KDD 2026" paperLink="#" codeLink="https://github.com/SJTU-DENG-Lab/ProductWebGen" award="" project="" data-topic="Multimodal Models, Generative Models, Webpage Generation" >}}
+Zhihong Liu, Siqi Kou, Zheng Li, Ye Ma, Quan Chen, Peng Jiang, Kai Yu, Zhijie Deng†
+{{< /publication >}}
+
 {{< publication title="Fast and Accurate Causal Parallel Decoding using Jacobi Forcing" venue="ICML 2026" paperLink="https://arxiv.org/abs/2512.14681" codeLink="" award="" project="" data-topic="Large Language Models" >}}
 Lanxiang Hu*, Siqi Kou*, Yichao Fu, Samyam Rajbhandari, Tajana Rosing, Yuxiong He, Zhijie Deng†, Hao Zhang†
 {{< /publication >}}

@@ -44,6 +44,10 @@ Current research interests focus on efficient cross-modality generation, includi
 <!-- 🎉 -->
 
 {{< newsEntry >}}
+**05/2026**: [ProductWebGen](https://github.com/SJTU-DENG-Lab/ProductWebGen) is accepted by KDD 2026! 🎉
+{{< /newsEntry >}}
+
+{{< newsEntry >}}
 **05/2026**: Four papers are accepted by ICML 2026! Check out: [Jacobi Forcing](https://arxiv.org/abs/2512.14681), [d3LLM](https://arxiv.org/abs/2601.07568), [LightningRL](https://arxiv.org/abs/2603.13319), and [Think-Then-Generate](https://arxiv.org/abs/2601.10332)! 🎉
 {{< /newsEntry >}}
 
