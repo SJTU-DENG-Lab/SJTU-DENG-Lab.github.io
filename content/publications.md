@@ -7,6 +7,10 @@ summary: publications
 
 ### 2026
 
+{{< publication title="MirrorPPR: Exemplar-Based Portrait Photo Retouching" venue="ECCV 2026" paperLink="#" codeLink="" award="" project="" data-topic="Generative Models, Diffusion Models" >}}
+Zhihong Liu, Zheng Li, Jiachun Jin, Siqi Kou, Yitao Jian, Fengpei Yu, Zhijie Deng†
+{{< /publication >}}
+
 {{< publication title="ProductWebGen: Benchmarking Multimodal Product Webpage Generation" venue="KDD 2026" paperLink="#" codeLink="https://github.com/SJTU-DENG-Lab/ProductWebGen" award="" project="" data-topic="Multimodal Models, Generative Models, Webpage Generation" >}}
 Zhihong Liu, Siqi Kou, Zheng Li, Ye Ma, Quan Chen, Peng Jiang, Kai Yu, Zhijie Deng†
 {{< /publication >}}
