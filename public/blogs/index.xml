@@ -6,8 +6,15 @@
     <description>Recent content in Blogs on DENG Lab @ SJTU</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multi-Block Diffusion Language Models</title>
+      <link>http://localhost:1313/blogs/mbd/</link>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/mbd/</guid>
+      <description>We introduce Multi-Block Diffusion Language Models (MBD-LMs), which align BD-LMs with practical MultiBD inference through Multi-block Teacher Forcing and an optimized Block Buffer decoding engine.</description>
+    </item>
     <item>
       <title>LoPA: Scaling dLLM Inference via Lookahead Parallel Decoding</title>
       <link>http://localhost:1313/blogs/lopa/</link>

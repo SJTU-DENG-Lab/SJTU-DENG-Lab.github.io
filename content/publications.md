@@ -7,11 +7,19 @@ summary: publications
 
 ### 2026
 
-{{< publication title="MirrorPPR: Exemplar-Based Portrait Photo Retouching" venue="ECCV 2026" paperLink="#" codeLink="" award="" project="" data-topic="Generative Models, Diffusion Models" >}}
+{{< publication title="Multi-Block Diffusion Language Models" venue="EMNLP 2026" paperLink="https://arxiv.org/pdf/2606.29215" codeLink="" award="" project="" data-topic="Large Language Models, Diffusion Models" >}}
+Yijie Jin, Jiajun Xu, Yuxuan Liu, Chenkai Xu, Jiajun Li, Kai Yu, Pengfei Liu, Zhijie Deng†
+{{< /publication >}}
+
+{{< publication title="CForce: Boosting Parallel Decoding for dLLMs via Consistency Forcing" venue="EMNLP 2026" paperLink="https://arxiv.org/pdf/2608.13925v1" codeLink="" award="" project="" data-topic="Large Language Models, Diffusion Models" >}}
+Yuji Ren*, Chenkai Xu*, Zhuocheng Gong, Jianguo Li†, Zhijie Deng†
+{{< /publication >}}
+
+{{< publication title="MirrorPPR: Exemplar-Based Portrait Photo Retouching" venue="ECCV 2026" paperLink="https://arxiv.org/pdf/2606.29308" codeLink="" award="" project="" data-topic="Generative Models, Diffusion Models" >}}
 Zhihong Liu, Zheng Li, Jiachun Jin, Siqi Kou, Yitao Jian, Fengpei Yu, Zhijie Deng†
 {{< /publication >}}
 
-{{< publication title="ProductWebGen: Benchmarking Multimodal Product Webpage Generation" venue="KDD 2026" paperLink="#" codeLink="https://github.com/SJTU-DENG-Lab/ProductWebGen" award="" project="" data-topic="Multimodal Models, Generative Models, Webpage Generation" >}}
+{{< publication title="ProductWebGen: Benchmarking Multimodal Product Webpage Generation" venue="KDD 2026" paperLink="https://arxiv.org/pdf/2606.01022" codeLink="https://github.com/SJTU-DENG-Lab/ProductWebGen" award="" project="" data-topic="Multimodal Models, Generative Models, Webpage Generation" >}}
 Zhihong Liu, Siqi Kou, Zheng Li, Ye Ma, Quan Chen, Peng Jiang, Kai Yu, Zhijie Deng†
 {{< /publication >}}
 
@@ -39,7 +47,7 @@ Chenkai Xu, Xu Wang, Zhenyi Liao, Yishun Li, TianQi Hou, Zhijie Deng†
 Hanwen Xu, Xuyao Huang, Yuzhe Liu, Zhijie Deng†
 {{< /publication >}}
 
-{{< publication title="LogCD: Local-to-global Consistency Distillation for Few-step Image Generation" venue="CVPR 2026" paperLink="#" codeLink="" award="" project="" data-topic="Generative Models, Diffusion Models" >}}
+{{< publication title="LogCD: Local-to-global Consistency Distillation for Few-step Image Generation" venue="CVPR 2026" paperLink="https://openaccess.thecvf.com/content/CVPR2026/papers/Xie_LogCD_Local-to-global_Consistency_Distillation_for_Few-step_Image_Generation_CVPR_2026_paper.pdf" codeLink="" award="" project="" data-topic="Generative Models, Diffusion Models" >}}
 Qingsong Xie†, Zhenyi Liao, Chen Chen, Zhijie Deng†, Haonan Lu
 {{< /publication >}}
 
@@ -67,7 +75,7 @@ Siqi Kou, Qingyuan Tian, Hanwen Xu, Zihao Zeng, Zhijie Deng†
 Yichao Fu, Rui Ge, Zelei Shao, Zhijie Deng†, Hao Zhang†
 {{< /publication >}}
 
-{{< publication title="Adaptive Discretization for Consistency Models" venue="NeurIPS 2025" paperLink="#" codeLink="" award="" project="" data-topic="Generative Models, Diffusion Models" >}}
+{{< publication title="Adaptive Discretization for Consistency Models" venue="NeurIPS 2025" paperLink="https://arxiv.org/pdf/2510.17266v1" codeLink="" award="" project="" data-topic="Generative Models, Diffusion Models" >}}
 Jiayu Bai, Zhanbo Feng, Zhijie Deng, TianQi Hou, Robert C Qiu, Zenan Ling
 {{< /publication >}}
 
@@ -87,7 +95,7 @@ Wei Huang, Yizhe Xiong, Xin Ye, Zhijie Deng, Hui Chen, Zijia Lin, Guiguang Ding
 Hongcheng Gao, Tianyu Pang†, Chao Du, Taihang Hu, Zhijie Deng†, Min Lin
 {{< /publication >}}
 
-{{< publication title="Advancing Text-to-3D Generation with Linearized Lookahead Variational Score Distillation" venue="ICCV 2025" paperLink="#" codeLink="" award="" project="" data-topic="Generative Models, Diffusion Models" >}}
+{{< publication title="Advancing Text-to-3D Generation with Linearized Lookahead Variational Score Distillation" venue="ICCV 2025" paperLink="https://openaccess.thecvf.com/content/ICCV2025/papers/Lei_Advancing_Text-to-3D_Generation_with_Linearized_Lookahead_Variational_Score_Distillation_ICCV_2025_paper.pdf" codeLink="" award="" project="" data-topic="Generative Models, Diffusion Models" >}}
 Yu Lei, Bingde Liu, Qingsong Xie, Haonan Lu, Zhijie Deng†
 {{< /publication >}}
 

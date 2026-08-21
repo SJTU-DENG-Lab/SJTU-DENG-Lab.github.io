@@ -44,6 +44,14 @@ Current research interests focus on efficient cross-modality generation, includi
 <!-- 🎉 -->
 
 {{< newsEntry >}}
+**08/2026**: [MBD-LMs](https://arxiv.org/pdf/2606.29215) and [CForce](https://arxiv.org/pdf/2608.13925v1) are accepted by EMNLP 2026! 🎉
+{{< /newsEntry >}}
+
+{{< newsEntry >}}
+**06/2026**: [MirrorPPR](https://github.com/SJTU-DENG-Lab/ProductWebGen) is accepted by ECCV 2026! 🎉
+{{< /newsEntry >}}
+
+{{< newsEntry >}}
 **05/2026**: [ProductWebGen](https://github.com/SJTU-DENG-Lab/ProductWebGen) is accepted by KDD 2026! 🎉
 {{< /newsEntry >}}
 
@@ -162,6 +170,6 @@ Current research interests focus on efficient cross-modality generation, includi
 
 ### Sponsors and Collaborators
 
-{{< four_images src1="/img/sponsors/NSFC.jpg" src2="/img/sponsors/shkw.jpg" src3="/img/sponsors/OPPO-Logo.png" src4="/img/sponsors/bc.png" alt2="shkw" alt1="nsfc" alt3="oppo" alt4="baichuan" width1="23%" width2="27%" width3="23%" width4="25%" title="">}}
+{{< four_images src1="/img/sponsors/NSFC.jpg" src2="/img/sponsors/shkw.jpg" src4="/img/sponsors/OPPO-Logo.png" src3="/img/sponsors/sharpa.png" alt2="shkw" alt1="nsfc" alt3="sharpa" alt4="oppo" width1="23%" width2="27%" width3="23%" width4="25%" title="">}}
 {{< four_images src1="/img/sponsors/ks.jpg" src2="/img/sponsors/hw.png" src3="/img/sponsors/ts.png" src4="/img/sponsors/zhipu.png" alt2="hw" alt1="ks" alt3="ts" alt4="zhipu" width1="23%" width2="27%" width3="23%" width4="25%" title="">}}
 {{< four_images src1="/img/sponsors/alimama.png" src2="/img/sponsors/ant.png" src3="/img/sponsors/transsion.png" src4="/img/sponsors/sii.avif" alt2="white-linen" alt1="alimama" alt3="white-linen" alt4="white-linen" width1="23%" width2="27%" width3="23%" width4="25%" title="">}}
