@@ -7,6 +7,10 @@ summary: publications
 
 ### 2026
 
+{{< publication title="World-Language-Action Model for Unified World Modeling, Language Reasoning, and Action Synthesis" venue="CoRL 2026" paperLink="https://arxiv.org/pdf/2606.05979.pdf" codeLink="" award="" project="" data-topic="World Models, Multimodal Models, Vision-Language-Action Models" >}}
+Yi Yang, Zhihong Liu, Siqi Kou, Yiyang Chen, Yanzhe Hu, Jianbo Zhou, Boyuan Zhao, Zhijie Wei, Xiao Xia, Xueqi Li, Pengfei Liu, Zhijie Deng†
+{{< /publication >}}
+
 {{< publication title="Multi-Block Diffusion Language Models" venue="EMNLP 2026" paperLink="https://arxiv.org/pdf/2606.29215" codeLink="" award="" project="" data-topic="Large Language Models, Diffusion Models" >}}
 Yijie Jin, Jiajun Xu, Yuxuan Liu, Chenkai Xu, Jiajun Li, Kai Yu, Pengfei Liu, Zhijie Deng†
 {{< /publication >}}
@@ -288,5 +292,4 @@ Zhijie Deng*, Hao Zhang*, Xiaodan Liang, Luona Yang, Shizhen Xu, Jun Zhu, Eric P
 {{< /publication >}}
 
 &emsp;
-
 

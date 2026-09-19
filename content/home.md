@@ -48,6 +48,10 @@ Current research interests focus on efficient cross-modality generation, includi
 {{< /newsEntry >}}
 
 {{< newsEntry >}}
+**06/2026**: [World-Language-Action Model](https://arxiv.org/pdf/2606.05979.pdf) is accepted by CoRL 2026! 🎉
+{{< /newsEntry >}}
+
+{{< newsEntry >}}
 **06/2026**: [MirrorPPR](https://github.com/SJTU-DENG-Lab/ProductWebGen) is accepted by ECCV 2026! 🎉
 {{< /newsEntry >}}
 
