@@ -44,7 +44,11 @@ Current research interests focus on efficient cross-modality generation, includi
 <!-- 🎉 -->
 
 {{< newsEntry >}}
-**08/2026**: [MBD-LMs](https://arxiv.org/pdf/2606.29215) and [CForce](https://arxiv.org/pdf/2608.13925v1) are accepted by EMNLP 2026! 🎉
+**09/2026**: [LatentUM](https://arxiv.org/pdf/2604.02097) is accepted by NeurIPS 2026 as an Oral paper! 🎉
+{{< /newsEntry >}}
+
+{{< newsEntry >}}
+**08/2026**: [MBD-LMs](https://arxiv.org/pdf/2606.29215) is accepted as an Oral paper at EMNLP 2026, and [CForce](https://arxiv.org/pdf/2608.13925v1) is also accepted by EMNLP 2026! 🎉
 {{< /newsEntry >}}
 
 {{< newsEntry >}}
