@@ -1,0 +1,9 @@
+{{ define "main" }}
+<article class="join-page">
+  <header class="join-heading">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p>{{ . }}</p>{{ end }}
+  </header>
+  <div class="join-content">{{ .Content }}</div>
+</article>
+{{ end }}

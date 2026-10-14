@@ -1,0 +1,32 @@
+{
+  "blogs/mbd/index.md": {
+    "language": "English",
+    "lang": "en",
+    "summary": "Multi-block Teacher Forcing and Block Buffer decoding enable concurrent refinement across diffusion language model blocks."
+  },
+  "blogs/lopa/index.md": {
+    "language": "English",
+    "lang": "en",
+    "summary": "Lookahead Parallel Decoding enables diffusion language models to generate up to 10.1 tokens per forward pass."
+  },
+  "blogs/adamoe/index.md": {
+    "language": "English",
+    "lang": "en",
+    "summary": "Null experts let each token activate a different number of real experts, reducing computation while preserving accuracy."
+  },
+  "blogs/adamoe_zh/index.md": {
+    "language": "中文",
+    "lang": "zh-Hans",
+    "summary": "通过引入零计算开销的“空专家”，让每个 Token 自适应选择真实专家数量，在降低计算量的同时保持模型表现。"
+  },
+  "blogs/sift/index.md": {
+    "language": "English",
+    "lang": "en",
+    "summary": "Dynamically generated Stickers summarize key facts and constraints to keep language model reasoning grounded in the query."
+  },
+  "blogs/cllm/index.md": {
+    "language": "English",
+    "lang": "en",
+    "summary": "Consistency training teaches pretrained language models to decode multiple tokens in parallel without additional inference-time model components."
+  }
+}

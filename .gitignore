@@ -6,3 +6,7 @@ public/*
 convert_format_print.py
 monitor.py
 log.txt
+# Hugo-generated member thumbnails; retain originals in static/img/members/.
+/resources/_gen/images/portraits/
+# Hugo-generated Gallery previews; source media remains unchanged.
+/resources/_gen/images/gallery/

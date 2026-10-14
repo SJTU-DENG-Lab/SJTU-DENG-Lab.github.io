@@ -1,0 +1,6 @@
+{{- $name := .short_name -}}
+<div class="research-links">
+  {{ with .paper }}<a href="{{ . }}" aria-label="{{ $name }} paper">Paper <span aria-hidden="true">↗</span></a>{{ end }}
+  {{ with .code }}<a href="{{ . }}" aria-label="{{ $name }} code">Code <span aria-hidden="true">↗</span></a>{{ end }}
+  {{ with .blog }}<a href="{{ . | relURL }}" aria-label="{{ $name }} blog post">Blog <span aria-hidden="true">↗</span></a>{{ end }}
+</div>

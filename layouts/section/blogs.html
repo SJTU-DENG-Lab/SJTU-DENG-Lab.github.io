@@ -1,48 +1,46 @@
 {{- define "main" -}}
-
-{{- if (and site.Params.profileMode.enabled .IsHome) -}}
-{{- partial "index_profile.html" . -}}
-{{- else }}{{/* if not profileMode */}}
-
-{{- if not .IsHome | and .Title -}}
-<header class="page-header">
-  {{- partial "breadcrumbs.html" . -}}
-  <h1>{{ .Title }}</h1>
-  {{- if .Description -}}
-  <div class="page-description">{{ .Description | markdownify }}</div>
-  {{- end -}}
-</header>
-{{- end -}}
-
-{{- $pages := where .Site.RegularPages "Type" "in" (slice "blogs") -}}
-{{- $paginator := .Paginate $pages -}}
-<div class="posts-list">
-  {{- range $paginator.Pages -}}
-  <article class="post-preview">
-    {{- with .Params.cover.image -}} <!-- Updated path to access cover image -->
-    <div class="post-image">
-      <img src="{{ . | absURL }}" alt="{{ $.Params.cover.alt }}"> <!-- Use absURL for proper path resolution -->
-    </div>
-    {{- end -}}
-    <div class="post-details">
-      <h2><a href="{{ .Permalink }}" style="color: black !important;">{{ .Title }}</a></h2>
-      <time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time>
-      {{- if .Params.author -}} <!-- Check for single author -->
-      <p class="post-author"> {{ .Params.author }}</p>
-      {{- else if .Params.authors -}} <!-- Check for multiple authors -->
-      <p class="post-author"> {{ delimit .Params.authors ", " }}</p>
-      <p style="text-align: justify;">{{ .Summary | markdownify }}</p>
-      {{- end -}}
-    </div>
-  </article>
-  {{- end -}}
-</div>
-{{- if gt $paginator.TotalPages 1 -}}
-<footer class="pagination-footer">
-  {{ template "_internal/pagination.html" . }}
-</footer>
-{{- end -}}
-
-{{- end }}{{/* end profileMode */}}
-
-{{- end }}{{/* end main */}}
+<section class="blogs-page" aria-labelledby="blogs-title">
+  <header class="blogs-heading">
+    <h1 id="blogs-title">{{ .Title }}</h1>
+    <p>{{ .Description | default "Ideas, methods, and stories behind our research." }}</p>
+  </header>
+  {{- $paginator := .Paginate .RegularPages -}}
+  <div class="blogs-grid">
+    {{- range $index, $page := $paginator.Pages -}}
+    {{- $preview := index site.Data.blog_previews .File.Path -}}
+    {{- $titleID := printf "blog-title-%d" $index -}}
+    <article class="blog-card">
+      <a class="blog-card-link" href="{{ .RelPermalink }}" aria-labelledby="{{ $titleID }}">
+        {{- with .Params.cover.image }}
+        <div class="blog-card-image">
+          <img src="{{ . | relURL }}" alt="{{ $page.Params.cover.alt | default $page.Title }}" loading="{{ if lt $index 2 }}eager{{ else }}lazy{{ end }}" decoding="async">
+        </div>
+        {{- end }}
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+            {{- with $preview.language }}<span class="blog-language">{{ . }}</span>{{ end }}
+          </div>
+          <h2 id="{{ $titleID }}"{{ with $preview.lang }} lang="{{ . }}"{{ end }}>{{ .Title }}</h2>
+          <p class="blog-card-summary"{{ with $preview.lang }} lang="{{ . }}"{{ end }}>{{ $preview.summary | default (.Summary | plainify | htmlUnescape | truncate 180) }}</p>
+          {{- if .Params.author }}
+          <p class="blog-card-authors">{{ .Params.author }}</p>
+          {{- else }}{{ with .Params.authors }}
+          <p class="blog-card-authors">{{ delimit . ", " }}</p>
+          {{- end }}
+          {{- end }}
+          <span class="blog-card-read" aria-hidden="true">Read article <svg viewBox="0 0 24 24" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+    </article>
+    {{- end }}
+  </div>
+  {{- if gt $paginator.TotalPages 1 }}
+  <nav class="blogs-pagination" aria-label="Blog pages">
+    {{- with $paginator.Prev }}<a href="{{ .URL }}" rel="prev">← Newer articles</a>{{ end }}
+    <span>Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+    {{- with $paginator.Next }}<a href="{{ .URL }}" rel="next">Older articles →</a>{{ end }}
+  </nav>
+  {{- end }}
+</section>
+{{- end }}

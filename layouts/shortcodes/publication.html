@@ -1,18 +1,15 @@
-<div class="publication-reference" style="text-align: justify;" data-topic="{{ .Params.topic }}">
-    <p>
-    <a href="{{ .Get "paperLink" }}">{{ .Get "title" }}</a><br>
-    {{ .Inner }}<br>
-    <strong>{{ .Get "venue" }}</strong>
-    {{ with .Get "award" }}
-        <strong style="color: red;">({{ . }})</strong>
-    {{ end }}
-
-        <br>
-    {{ with .Get "codeLink" }}
-        [<a href="{{ . }}">code</a>]
-    {{ end }}
-    {{ with .Get "project" }}
-        [<a href="{{ . }}">project</a>]
-    {{ end }}
-    </p>
-</div>
+<article class="publication-reference" data-topic="{{ .Get "data-topic" }}">
+  <h3 class="publication-title"><a href="{{ .Get "paperLink" }}">{{ .Get "title" }}</a></h3>
+  <p class="publication-authors">{{ .Inner | strings.TrimSpace }}</p>
+  <div class="publication-details">
+    <div class="publication-meta">
+      <span class="publication-venue">{{ .Get "venue" }}</span>
+      {{- with .Get "award" }}<span class="publication-award">{{ . }}</span>{{ end -}}
+    </div>
+    <div class="publication-links" aria-label="Resources for {{ .Get "title" }}">
+      <a href="{{ .Get "paperLink" }}">Paper <span aria-hidden="true">↗</span></a>
+      {{- with .Get "codeLink" }}<a href="{{ . }}">Code <span aria-hidden="true">↗</span></a>{{ end -}}
+      {{- with .Get "project" }}<a href="{{ . }}">Project <span aria-hidden="true">↗</span></a>{{ end -}}
+    </div>
+  </div>
+</article>

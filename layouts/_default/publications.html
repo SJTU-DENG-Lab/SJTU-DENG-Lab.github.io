@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{- $content := .Content -}}
+{{- $count := len (findRE `class="publication-reference"` $content) -}}
+{{- $publicationsJS := resources.Get "js/publications.js" | minify | fingerprint -}}
+<script src="{{ $publicationsJS.RelPermalink }}" integrity="{{ $publicationsJS.Data.Integrity }}" defer></script>
+
+<div class="publications-page">
+  <header class="publications-heading">
+    <h1>{{ .Title }}</h1>
+    <p>Efficient generative AI, multimodal models,<br class="publications-heading-break"> and embodied intelligence.</p>
+  </header>
+
+  <div class="publications-toolbar">
+    <div class="publications-search" role="search" data-publication-search hidden>
+      <label class="publications-sr-only" for="publication-search">Search publications by title, author, venue, or topic</label>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <input id="publication-search" type="search" placeholder="Search papers, authors, topics…" autocomplete="off" spellcheck="false" aria-controls="publication-list">
+      <button type="button" data-publication-clear aria-label="Clear search" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </div>
+    <nav class="publications-years" aria-label="Publications by year" data-publication-years>
+      <ul>
+        {{- range sort .Fragments.Identifiers "value" "desc" -}}
+          <li><a href="#{{ . }}">{{ . }}</a></li>
+        {{- end -}}
+      </ul>
+    </nav>
+  </div>
+
+  <p class="publications-status" role="status" aria-live="polite" aria-atomic="true" data-publication-status>{{ $count }} publications</p>
+  <div class="publications-content" id="publication-list" data-publications-content>{{ $content }}</div>
+  <div class="publications-empty" data-publication-empty hidden>
+    <h2>No matching publications</h2>
+    <p>Try a different title, author, venue, or research topic.</p>
+    <button type="button" data-publication-reset>Clear search <span aria-hidden="true">↗</span></button>
+  </div>
+</div>
+{{ end }}

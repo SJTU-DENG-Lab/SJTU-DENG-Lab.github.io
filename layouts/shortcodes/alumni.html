@@ -1,15 +1,8 @@
-<head>
-    <!-- Other head elements -->
-    <style>
-        .alumni-section h2 {
-            font-size: 1.0rem; /* Adjust the font size as needed */
-        }
-    </style>
-</head>
-
 <div class="alumni-section">
-    <h2>{{ .Get "category" }}</h2>
-    <ul>
-        {{ .Inner }}
-    </ul>
+  {{- with .Get "category" | default "" | strings.TrimSpace }}
+    <h3 class="alumni-category">{{ . }}</h3>
+  {{- end }}
+  <ul class="alumni-list">
+    {{ .Inner }}
+  </ul>
 </div>

@@ -1,14 +1,19 @@
 ---
-title: ""
+title: "Team"
 layout: "people"
 url: "/people/"
-summary: people
+summary: "Meet the researchers and students at DENG Lab, Shanghai Jiao Tong University."
+description: "Meet the researchers and students at DENG Lab, Shanghai Jiao Tong University."
+hideMeta: true
+math: false
 ---
 
-### Lab Members
+## Lab Members
 
 {{< lab_members_grid >}}
-{{< lab_member name="Zhijie Deng" role="Associate Professor" image="dzj.jpg" academic="https://thudzj.github.io/"  twitter="https://x.com/ZhijieDeng2">}}
+{{< lab_member name="Zhijie Deng" role="Associate Professor" image="dzj.jpg" image_position="50% 50%" image_scale="1.30" academic="https://thudzj.github.io/"  twitter="https://x.com/ZhijieDeng2">}}
+
+{{< lab_member name="Xiao Xia" role="Visiting Scholar" image="xiao-xia.jpg" image_fit="contain">}}
 
 <!-- {{< lab_member name="Yibo Miao" role="Master Student" image="unknown.jpg" academic="https://scholar.google.com/citations?user=PaVrM_kAAAAJ&hl=zh-CN">}} -->
 
@@ -16,19 +21,19 @@ summary: people
 
 <!-- {{< lab_member name="Zipeng Xiao" role="Master Student" image="xzp.jpg" academic="#">}} -->
 
-{{< lab_member name="Siqi Kou" role="PhD Student" image="unknown.jpg" academic="https://karrykkk.github.io/">}}
+{{< lab_member name="Siqi Kou" role="PhD Student" image="siqi-kou.jpg" image_position="50% 60%" academic="https://karrykkk.github.io/">}}
 
 {{< lab_member name="Yi Yang" role="PhD Student" image="unknown.jpg" academic="https://scholar.google.com/citations?user=FXKS8AMAAAAJ&hl=en">}}
 
 {{< lab_member name="Jiachun Jin" role="PhD Student" image="unknown.jpg" academic="https://jiachunjin.github.io/">}}
 
-{{< lab_member name="Zhihong Liu" role="PhD Student" image="unknown.jpg" academic="#">}}
+{{< lab_member name="Zhihong Liu" role="PhD Student" image="zhihong-liu.jpg" academic="#">}}
 
-{{< lab_member name="Yijie Jin" role="PhD Student" image="unknown.jpg" academic="https://drewjin.github.io/">}}
+{{< lab_member name="Yijie Jin" role="PhD Student" image="yijie-jin.jpg" image_position="50% 45%" image_scale="1.20" academic="https://drewjin.github.io/">}}
 
 <!-- {{< lab_member name="Yugang Wang" role="Incoming PhD Student" image="unknown.jpg" academic="#">}} -->
 
-{{< lab_member name="Zetong Zhou" role="PhD Student" image="unknown.jpg" academic="https://ls-kelvin.github.io/">}}
+{{< lab_member name="Zetong Zhou" role="PhD Student" image="zetong-zhou.jpg" image_position="50% 100%" image_scale="1.30" academic="https://ls-kelvin.github.io/">}}
 
 {{< lab_member name="Xu Wang" role="Master Student" image="unknown.jpg" academic="#">}}
 
@@ -36,7 +41,7 @@ summary: people
 
 {{< lab_member name="Xuyao Huang" role="Master Student" image="unknown.jpg" academic="https://openreview.net/profile?id=~Xuyao_Huang1">}}
 
-{{< lab_member name="Chenkai Xu" role="Master Student" image="unknown.jpg" academic="https://xuchenkai1.github.io/index.html">}}
+{{< lab_member name="Chenkai Xu" role="Master Student" image="chenkai-xu.jpg" image_position="50% 75%" academic="https://xuchenkai1.github.io/index.html">}}
 
 {{< lab_member name="Yiyang Chen" role="Master Student" image="unknown.jpg" academic="#">}}
 
@@ -44,19 +49,15 @@ summary: people
 
 <!-- {{< lab_member name="Bingde Liu" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
 
-{{< lab_member name="Yuji Ren" role="Master Student" image="unknown.jpg" academic="https://openreview.net/profile?id=~Yuji_Ren1">}}
+{{< lab_member name="Yuji Ren" role="Master Student" image="yuji-ren.jpg" image_position="50% 75%" image_scale="1.30" academic="https://ren-yuji.github.io/">}}
 
-{{< lab_member name="Xiang Li" role="Master Student" image="unknown.jpg" academic="#">}}
+{{< lab_member name="Xiang Li" role="Master Student" image="xiang-li.jpg" image_position="50% 100%" image_scale="1.25" academic="#">}}
 
 <!-- {{< lab_member name="Yuzhe Liu" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
 
-<!-- {{< lab_member name="Boxiu Li" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
+{{< lab_member name="Yanzhe Hu" role="Undergrad Student" image="yanzhe-hu.png" image_position="50% 35%" academic="https://alexhu-1215.github.io/Alex/">}}
 
-{{< lab_member name="Yanzhe Hu" role="Undergrad Student" image="unknown.jpg" academic="https://alexhu-1215.github.io/Alex/">}}
-
-{{< lab_member name="Boxiu Li" role="Undergrad Student" image="unknown.jpg" academic="https://openreview.net/profile?id=~Boxiu_Li1">}}
-
-{{< lab_member name="Jianbo Zhou" role="Undergrad Student" image="unknown.jpg" academic="https://openreview.net/profile?id=~Jianbo_Zhou1">}}
+{{< lab_member name="Jianbo Zhou" role="Undergrad Student" image="jianbo-zhou.jpg" image_position="50% 50%" image_scale="1.30" academic="https://openreview.net/profile?id=~Jianbo_Zhou1">}}
 
 {{< lab_member name="Zheng Li" role="Undergrad Student" image="unknown.jpg" academic="#">}}
 
@@ -78,9 +79,15 @@ summary: people
 
 {{< lab_member name="Wenxin Chen" role="Undergrad Student" image="unknown.jpg" academic="#">}}
 
-{{< lab_member name="Jiajun Xu" role="Undergrad Student" image="unknown.jpg" academic="#">}}
+{{< lab_member name="Jiajun Xu" role="Undergrad Student" image="jiajun-xu.jpg" image_position="50% 25%" academic="#">}}
 
 {{< lab_member name="Ningyi Hu" role="Undergrad Student" image="unknown.jpg" academic="#">}}
+
+{{< lab_member name="Qirui Zhang" role="Undergrad Student" image="qirui-zhang.jpg" image_position="50% 50%" image_scale="1.20">}}
+
+{{< lab_member name="Yunchao Ke" role="Undergrad Student" image="yunchao-ke.jpeg" image_position="50% 25%" image_scale="1.05">}}
+
+{{< lab_member name="Yuxuan Liu" role="Undergrad Student" image="yuxuan-liu.jpg" image_position="50% 80%" image_scale="1.25" academic="https://osc-7.github.io/">}}
 
 <!-- {{< lab_member name="Yuxuan Zheng" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
 
@@ -90,7 +97,7 @@ summary: people
 
 {{< /lab_members_grid >}}
 
-### Alumni
+## Alumni
 {{< alumni >}}
 {{< alumni_entry name="Zihao Zeng" description="Master, 2023-2026; now Researcher at ByteDance Seed." homepage="https://cengzihao.github.io/">}} 
 {{< alumni_entry name="Chang Liu" description="Master, 2023-2026." homepage="#">}} 

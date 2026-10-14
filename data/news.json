@@ -1,0 +1,162 @@
+[
+  {
+    "date": "2026-09",
+    "text": "[LatentUM](https://arxiv.org/pdf/2604.02097) is accepted by NeurIPS 2026 as an Oral paper! 🎉",
+    "year": "2026"
+  },
+  {
+    "date": "2026-08",
+    "text": "[MBD-LMs](https://arxiv.org/pdf/2606.29215) is accepted as an Oral paper at EMNLP 2026, and [CForce](https://arxiv.org/pdf/2608.13925v1) is also accepted by EMNLP 2026! 🎉",
+    "year": "2026"
+  },
+  {
+    "date": "2026-06",
+    "text": "[World-Language-Action Model](https://arxiv.org/pdf/2606.05979.pdf) is accepted by CoRL 2026! 🎉",
+    "year": "2026"
+  },
+  {
+    "date": "2026-06",
+    "text": "[MirrorPPR](https://arxiv.org/pdf/2606.29308) is accepted by ECCV 2026! 🎉",
+    "year": "2026"
+  },
+  {
+    "date": "2026-05",
+    "text": "[ProductWebGen](https://github.com/SJTU-DENG-Lab/ProductWebGen) is accepted by KDD 2026! 🎉",
+    "year": "2026"
+  },
+  {
+    "date": "2026-05",
+    "text": "Four papers are accepted by ICML 2026! Check out: [Jacobi Forcing](https://arxiv.org/abs/2512.14681), [d3LLM](https://arxiv.org/abs/2601.07568), [LightningRL](https://arxiv.org/abs/2603.13319), and [Think-Then-Generate](https://arxiv.org/abs/2601.10332)! 🎉",
+    "year": "2026"
+  },
+  {
+    "date": "2026-04",
+    "text": "[UniCM](https://arxiv.org/pdf/2502.05415.pdf) and [TPS-Bench](https://arxiv.org/pdf/2511.01527.pdf) are accepted by ACL 2026! 🎉",
+    "year": "2026"
+  },
+  {
+    "date": "2026-02",
+    "text": "[Mantis](https://arxiv.org/pdf/2511.16175) and [LogCD](https://openaccess.thecvf.com/content/CVPR2026/papers/Xie_LogCD_Local-to-global_Consistency_Distillation_for_Few-step_Image_Generation_CVPR_2026_paper.pdf) are accepted by CVPR 2026! 🎉",
+    "year": "2026"
+  },
+  {
+    "date": "2026-01",
+    "text": "[D2F](https://arxiv.org/pdf/2508.09192) is accepted by ICLR 2026! 🎉",
+    "year": "2026"
+  },
+  {
+    "date": "2025-10",
+    "text": "[Neural Eigenmap](https://arxiv.org/pdf/2210.12637) is accepted by TPAMI! 🎉",
+    "year": "2025"
+  },
+  {
+    "date": "2025-10",
+    "text": "Zhijie will serve as an area chair of ACL Rolling Review! 🎉",
+    "year": "2025"
+  },
+  {
+    "date": "2025-01",
+    "text": "Three papers are accepted to NeurIPS 25! Check out: [Infra](https://arxiv.org/pdf/2505.19949), [Lookahead Reasoning](https://arxiv.org/pdf/2506.19830), and [Adaptive Discretization for Consistency Models](https://arxiv.org/pdf/2510.17266v1)! 🎉",
+    "year": "2025"
+  },
+  {
+    "date": "2025-09",
+    "text": "Zhijie will serve as an area chair of CVPR 2026! 🎉",
+    "year": "2025"
+  },
+  {
+    "date": "2025-08",
+    "text": "Zhijie will serve as an area chair of ICLR 2026! 🎉",
+    "year": "2025"
+  },
+  {
+    "date": "2025-08",
+    "text": "[LOVECon](https://arxiv.org/pdf/2310.09711.pdf) is accepted to SCIS! 🎉",
+    "year": "2025"
+  },
+  {
+    "date": "2025-08",
+    "text": "[SIFT](https://arxiv.org/pdf/2502.14922?) and [Fast Quiet-STaR](https://arxiv.org/pdf/2505.17746) are accepted to EMNLP Findings! 🎉",
+    "year": "2025"
+  },
+  {
+    "date": "2025-06",
+    "text": "[L^2VSD](https://openaccess.thecvf.com/content/ICCV2025/papers/Lei_Advancing_Text-to-3D_Generation_with_Linearized_Lookahead_Variational_Score_Distillation_ICCV_2025_paper.pdf) and [Meta-Unlearning on Diffusion Models](https://openaccess.thecvf.com/content/ICCV2025/papers/Gao_Meta-Unlearning_on_Diffusion_Models_Preventing_Relearning_Unlearned_Concepts_ICCV_2025_paper.pdf) are accepted to ICCV! 🎉",
+    "year": "2025"
+  },
+  {
+    "date": "2025-05",
+    "text": "[Orthus](https://arxiv.org/pdf/2412.00127) is accepted to ICML! 🎉",
+    "year": "2025"
+  },
+  {
+    "date": "2025-01",
+    "text": "Two papers are accepted to ICLR 25! Check out: [MatryoshkaKV](https://arxiv.org/pdf/2410.14731) and [3D-Properties](https://arxiv.org/pdf/2406.07327)! 🎉",
+    "year": "2025"
+  },
+  {
+    "date": "2024-12",
+    "text": "[SCott: Accelerating Diffusion Models with Stochastic Consistency Distillation](https://arxiv.org/pdf/2403.01505.pdf) is accepted to AAAI! 🎉",
+    "year": "2024"
+  },
+  {
+    "date": "2024-12",
+    "text": "[Unveiling Uncertainty: A Deep Dive into Calibration and Performance of Multimodal Large Language Models](https://aclanthology.org/2025.coling-main.208.pdf) is accepted to Coling! 🎉",
+    "year": "2024"
+  },
+  {
+    "date": "2024-09",
+    "text": "[Amortized Fourier Neural Operators](https://openreview.net/attachment?id=a6em980M9x&name=pdf) is accepted to NeurIPS! 🎉",
+    "year": "2024"
+  },
+  {
+    "date": "2024-09",
+    "text": "[AdaMOE](https://arxiv.org/pdf/2406.13233) is accepted to EMNLP Findings! 🎉",
+    "year": "2024"
+  },
+  {
+    "date": "2024-08",
+    "text": "[Calibrating Deep Ensemble through Functional Variational Inference](https://openreview.net/pdf?id=uvPnTWMLll) is accepted to TMLR! 🎉",
+    "year": "2024"
+  },
+  {
+    "date": "2024-08",
+    "text": "[Accurate and Reliable Forecasting using Stochastic Differential Equations](https://arxiv.org/pdf/2103.15041) is accepted to TKDD! 🎉",
+    "year": "2024"
+  },
+  {
+    "date": "2024-07",
+    "text": "[Lost in Translation: Latent Concept Misalignment in Text-to-Image Diffusion Models](https://arxiv.org/pdf/2408.00230) is accepted to ECCV 2024! 🎉",
+    "year": "2024"
+  },
+  {
+    "date": "2024-05",
+    "text": "[Efficient Detection of LLM-generated Texts with a Bayesian Surrogate Model](https://arxiv.org/pdf/2305.16617.pdf) is accepted to ACL Findings! 🎉",
+    "year": "2024"
+  },
+  {
+    "date": "2024-05",
+    "text": "Four papers are accepted to ICML 24! Check out: [OSD](https://arxiv.org/abs/2310.07177), [Orthogonal attention](https://arxiv.org/pdf/2310.12487), [CLLMs](https://arxiv.org/abs/2403.00835), and [Spiking transformer](https://openreview.net/pdf?id=NeotatlYOL). 🎉",
+    "year": "2024"
+  },
+  {
+    "date": "2024-02",
+    "text": "[Bayesian Exploration of Pre-trained Models for Low-shot Image Classification](https://arxiv.org/pdf/2404.00312) is accepted to CVPR 24! 🎉",
+    "year": "2024"
+  },
+  {
+    "date": "2024-01",
+    "text": "[BayesDiff](https://arxiv.org/pdf/2310.11142) is accepted to ICLR 24! 🎉",
+    "year": "2024"
+  },
+  {
+    "date": "2023-09",
+    "text": "Three papers are accepted to NeurIPS 23! Check out: [Bayesian Data Selection](https://arxiv.org/pdf/2308.10544), [Learning Sample Difficulty from Pre-trained Models for Reliable Prediction](https://arxiv.org/pdf/2304.10127), and [CalibratedDPMs](https://arxiv.org/pdf/2302.10688). 🎉",
+    "year": "2023"
+  },
+  {
+    "date": "2023-07",
+    "text": "[Learning Neural Eigenfunctions for Unsupervised Semantic Segmentation](https://openaccess.thecvf.com/content/ICCV2023/papers/DENG_Learning_Neural_Eigenfunctions_for_Unsupervised_Semantic_Segmentation_ICCV_2023_paper.pdf) is accepted to ICCV 23! 🎉",
+    "year": "2023"
+  }
+]

@@ -1,0 +1,44 @@
+{{- $previewPath := .poster | default .src -}}
+{{- $sourcePath := printf "static%s" $previewPath -}}
+{{- if not (fileExists $sourcePath) -}}
+  {{- $sourcePath = printf "content%s" $previewPath -}}
+{{- end -}}
+{{- $original := resources.FromString (printf "gallery/%s" (path.Base $previewPath)) (readFile $sourcePath) -}}
+{{- /* Videos and animations supply a static poster. Originals open in the viewer. */ -}}
+{{- $small := $original.Resize "600x webp q85" -}}
+{{- $large := $original.Resize "1200x webp q85" -}}
+{{- $external := .external_url | default "" -}}
+<article class="gallery-card gallery-card--{{ .kind }}" data-gallery-item data-kind="{{ .kind }}">
+  <a class="gallery-card__trigger" href="{{ if $external }}{{ $external }}{{ else }}{{ .src | relURL }}{{ end }}"
+    {{- if $external }}
+    target="_blank" rel="noopener noreferrer"
+    aria-label="Watch {{ .title }} on {{ .platform }} (opens in a new tab)"
+    {{- else }}
+    data-gallery-open
+    data-src="{{ .src | relURL }}"
+    data-type="{{ .kind }}"
+    data-format="{{ .format | default "" }}"
+    data-poster="{{ if eq .kind "video" }}{{ $large.RelPermalink }}{{ end }}"
+    data-title="{{ .title }}"
+    data-label="{{ .label }}"
+    data-year="{{ .year }}"
+    data-alt="{{ .alt }}"
+    aria-label="{{ if eq .kind "video" }}Play{{ else }}View{{ end }} {{ .title }}{{ with .year }}, {{ . }}{{ end }}"
+    {{- end }}>
+    <span class="gallery-card__media">
+      <img src="{{ $small.RelPermalink }}" srcset="{{ $small.RelPermalink }} 600w, {{ $large.RelPermalink }} 1200w"
+        sizes="{{ if eq .kind "photo" }}(max-width: 640px) calc(100vw - 40px), (max-width: 1208px) calc(100vw - 48px), 1160px{{ else }}(max-width: 640px) calc(100vw - 40px), (max-width: 1208px) calc((100vw - 80px) / 2), 564px{{ end }}"
+        width="{{ $large.Width }}" height="{{ $large.Height }}" alt="{{ .alt }}" loading="{{ .loading | default "lazy" }}" decoding="async">
+      {{- if eq .kind "video" }}
+        <span class="gallery-card__play" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="m9 5 11 7-11 7Z" fill="currentColor"/></svg>
+        </span>
+      {{- end }}
+    </span>
+    <span class="gallery-card__caption">
+      <span class="gallery-card__title">{{ .title }}</span>
+      <span class="gallery-card__meta">{{ if $external }}{{ .platform }}{{ else if eq .label "Illustration" }}Illustration{{ else }}{{ .year }}{{ end }}</span>
+      <span class="gallery-card__arrow" aria-hidden="true">↗</span>
+    </span>
+  </a>
+</article>

@@ -1,0 +1,47 @@
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="header lab-header" data-default-theme="{{ site.Params.defaultTheme | default "auto" }}">
+  <nav class="nav" aria-label="Main navigation">
+    <div class="logo">
+      <a href="{{ "" | absLangURL }}" aria-label="DENG Lab homepage">
+        <img id="logo-image" src="{{ "img/lab/logo.svg" | relURL }}" alt="DENG Lab @ SJTU" width="1177" height="460">
+      </a>
+    </div>
+
+    <div class="nav-actions">
+      {{- if not site.Params.disableThemeToggle }}
+      <button id="lab-theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+        <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+        </svg>
+        <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+        </svg>
+      </button>
+      {{- end }}
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+          <path class="menu-icon-top" d="M4 6h16"></path>
+          <path class="menu-icon-middle" d="M4 12h16"></path>
+          <path class="menu-icon-bottom" d="M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    {{- $currentPage := . }}
+    <ul id="menu">
+      {{- range site.Menus.main }}
+      {{- $menuURL := .URL | absLangURL }}
+      {{- $isCurrent := eq (strings.TrimSuffix "/" $menuURL) (strings.TrimSuffix "/" $currentPage.Permalink) }}
+      <li>
+        <a href="{{ $menuURL }}"{{ if $isCurrent }} aria-current="page"{{ end }}>
+          <span{{ if $isCurrent }} class="active"{{ end }}>{{ .Name }}</span>
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+  </nav>
+</header>
+<script src="{{ "js/navigation.js" | relURL }}" defer></script>

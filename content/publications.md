@@ -1,13 +1,24 @@
 ---
-title: ""
+title: "Publications"
 layout: "publications"
 url: "/publications/"
-summary: publications
+summary: "Research publications from DENG Lab across efficient generative AI, multimodal models, and embodied intelligence."
+description: "Research publications from DENG Lab across efficient generative AI, multimodal models, and embodied intelligence."
+hideMeta: true
+math: false
 ---
 
 ### 2026
 
-{{< publication title="Multi-Block Diffusion Language Models" venue="EMNLP 2026" paperLink="https://arxiv.org/pdf/2606.29215" codeLink="" award="" project="" data-topic="Large Language Models, Diffusion Models" >}}
+{{< publication title="LatentUM: Unleashing the Potential of Interleaved Cross-Modal Reasoning via a Latent-Space Unified Model" venue="NeurIPS 2026" paperLink="https://arxiv.org/pdf/2604.02097" codeLink="https://github.com/SJTU-DENG-Lab/LatentUM" award="Oral" project="" data-topic="Multimodal Models, Large Language Models, Generative Models" >}}
+Jiachun Jin, Zetong Zhou, Xiao Yang, Hao Zhang, Pengfei Liu, Jun Zhu, Zhijie Deng†
+{{< /publication >}}
+
+{{< publication title="World-Language-Action Model for Unified World Modeling, Language Reasoning, and Action Synthesis" venue="CoRL 2026" paperLink="https://arxiv.org/pdf/2606.05979.pdf" codeLink="https://github.com/SJTU-DENG-Lab/WLA" award="" project="" data-topic="World Models, Multimodal Models, Vision-Language-Action Models" >}}
+Yi Yang, Zhihong Liu, Siqi Kou, Yiyang Chen, Yanzhe Hu, Jianbo Zhou, Boyuan Zhao, Zhijie Wei, Xiao Xia, Xueqi Li, Pengfei Liu, Zhijie Deng†
+{{< /publication >}}
+
+{{< publication title="Multi-Block Diffusion Language Models" venue="EMNLP 2026" paperLink="https://arxiv.org/pdf/2606.29215" codeLink="https://github.com/SJTU-DENG-Lab/MultiBD" award="Oral" project="" data-topic="Large Language Models, Diffusion Models" >}}
 Yijie Jin, Jiajun Xu, Yuxuan Liu, Chenkai Xu, Jiajun Li, Kai Yu, Pengfei Liu, Zhijie Deng†
 {{< /publication >}}
 
@@ -31,7 +42,7 @@ Lanxiang Hu*, Siqi Kou*, Yichao Fu, Samyam Rajbhandari, Tajana Rosing, Yuxiong H
 Yu-Yang Qian, Junda Su, Lanxiang Hu, Peiyuan Zhang, Zhijie Deng, Peng Zhao, Hao Zhang
 {{< /publication >}}
 
-{{< publication title="LightningRL: Breaking the Accuracy–Parallelism Trade-off of Block-wise dLLMs via Reinforcement Learning" venue="ICML 2026" paperLink="https://arxiv.org/abs/2603.13319" codeLink="" award="" project="" data-topic="Large Language Models" >}}
+{{< publication title="LightningRL: Breaking the Accuracy–Parallelism Trade-off of Block-wise dLLMs via Reinforcement Learning" venue="ICML 2026" paperLink="https://arxiv.org/abs/2603.13319" codeLink="https://github.com/SJTU-DENG-Lab/LightningRL" award="" project="" data-topic="Large Language Models" >}}
 Yanzhe Hu, Yijie Jin, Pengfei Liu, Kai Yu, Zhijie Deng†
 {{< /publication >}}
 
@@ -51,7 +62,7 @@ Hanwen Xu, Xuyao Huang, Yuzhe Liu, Zhijie Deng†
 Qingsong Xie†, Zhenyi Liao, Chen Chen, Zhijie Deng†, Haonan Lu
 {{< /publication >}}
 
-{{< publication title="Mantis: A Versatile Vision-Language-Action Model with Disentangled Visual Foresight" venue="CVPR 2026" paperLink="https://arxiv.org/pdf/2511.16175" codeLink="" award="" project="" data-topic="Vision-Language-Action Models" >}}
+{{< publication title="Mantis: A Versatile Vision-Language-Action Model with Disentangled Visual Foresight" venue="CVPR 2026" paperLink="https://arxiv.org/pdf/2511.16175" codeLink="https://github.com/SJTU-DENG-Lab/Mantis" award="" project="" data-topic="Vision-Language-Action Models" >}}
 Yi Yang, Xueqi Li, Yiyang Chen, Jin Song, Yihan Wang, Zipeng Xiao, Jiadi Su, You Qiaoben, Pengfei Liu, Zhijie Deng†
 {{< /publication >}}
 
@@ -60,6 +71,8 @@ Xu Wang, Chenkai Xu, Yijie Jin, Jiachun Jin, Hao Zhang, Zhijie Deng†
 {{< /publication >}}
 
 &emsp;
+
+
 
 ### 2025
 
@@ -288,5 +301,3 @@ Zhijie Deng*, Hao Zhang*, Xiaodan Liang, Luona Yang, Shizhen Xu, Jun Zhu, Eric P
 {{< /publication >}}
 
 &emsp;
-
-

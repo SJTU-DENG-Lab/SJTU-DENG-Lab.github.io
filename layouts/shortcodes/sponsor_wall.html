@@ -1,0 +1,49 @@
+{{- $partners := slice
+  (dict "src" "img/sponsors/NSFC.jpg" "alt" "National Natural Science Foundation of China")
+  (dict "src" "img/sponsors/shkw.jpg" "alt" "Shanghai Municipal Science and Technology Commission")
+  (dict "src" "img/sponsors/sharpa.png" "alt" "Sharpa")
+  (dict "src" "img/sponsors/OPPO-Logo.png" "alt" "OPPO")
+  (dict "src" "img/sponsors/ks.jpg" "alt" "Kuaishou")
+  (dict "src" "img/sponsors/hw.png" "alt" "Huawei")
+  (dict "src" "img/sponsors/ts.png" "alt" "Tsinghua University")
+  (dict "src" "img/sponsors/zhipu.png" "alt" "Zhipu AI")
+  (dict "src" "img/sponsors/alimama.png" "alt" "Alimama")
+  (dict "src" "img/sponsors/ant.png" "alt" "Ant Group")
+  (dict "src" "img/sponsors/transsion.png" "alt" "Transsion")
+  (dict "src" "img/sponsors/sii.avif" "alt" "Shanghai Innovation Institute")
+-}}
+
+<section class="partner-wall" aria-labelledby="partner-wall-title">
+  <div class="partner-wall__header">
+    <h2 id="partner-wall-title">Sponsors &amp; Collaborators</h2>
+  </div>
+
+  {{- $rowOne := first 6 $partners -}}
+  {{- $rowTwo := after 6 $partners -}}
+  <div class="partner-marquee" aria-label="Sponsors and collaborators">
+    <div class="partner-marquee__row">
+      <div class="partner-marquee__track">
+        {{- range $rowOne }}
+        <div class="partner-marquee__item"><img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy"></div>
+        {{- end }}
+        <div class="partner-marquee__copy" aria-hidden="true">
+          {{- range $rowOne }}
+          <div class="partner-marquee__item"><img src="{{ .src | relURL }}" alt="" loading="lazy"></div>
+          {{- end }}
+        </div>
+      </div>
+    </div>
+    <div class="partner-marquee__row partner-marquee__row--reverse">
+      <div class="partner-marquee__track">
+        {{- range $rowTwo }}
+        <div class="partner-marquee__item"><img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy"></div>
+        {{- end }}
+        <div class="partner-marquee__copy" aria-hidden="true">
+          {{- range $rowTwo }}
+          <div class="partner-marquee__item"><img src="{{ .src | relURL }}" alt="" loading="lazy"></div>
+          {{- end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

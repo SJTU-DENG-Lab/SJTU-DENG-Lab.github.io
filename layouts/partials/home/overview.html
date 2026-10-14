@@ -1,0 +1,100 @@
+<div class="lab-home">
+  <section class="home-hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow">DENG LAB · SJTU</p>
+      <h1 id="hero-title">Efficient AI,<br>across modalities.</h1>
+      <p class="hero-affiliation"><a href="https://www.cs.sjtu.edu.cn/">School of Computer Science</a><span aria-hidden="true"> · </span><a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a></p>
+      <p class="hero-description">We develop methods and theory for efficient, effective, reliable, and trustworthy generative AI.</p>
+      <p class="hero-directions">Our work spans unified multimodal models, world models and VLA, efficient architectures, and training, inference and RL infrastructure.</p>
+      <div class="hero-actions">
+        <a class="lab-button" href="#research">Our research <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="{{ "contact/" | relURL }}">Join the lab <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="{{ "img/lab/team-1280.webp" | relURL }}" srcset="{{ "img/lab/team-640.webp" | relURL }} 640w, {{ "img/lab/team-1280.webp" | relURL }} 1280w, {{ "img/lab/team-1920.webp" | relURL }} 1920w" sizes="(max-width: 780px) calc(100vw - 40px), (max-width: 1208px) 48vw, 574px" width="1280" height="960" alt="DENG Lab members gathered around a conference table at Shanghai Jiao Tong University." fetchpriority="high" decoding="async">
+      <figcaption>DENG Lab, Shanghai · 2025</figcaption>
+    </figure>
+  </section>
+
+  <section class="home-section research-section" id="research" aria-labelledby="research-title">
+    <div class="section-heading">
+      <h2 id="research-title">Selected research</h2>
+      <a class="text-link" href="{{ "publications/" | relURL }}">All publications <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="research-grid">
+      {{ range site.Data.research }}
+      <article class="research-card" aria-labelledby="research-{{ .id }}">
+        <a class="research-figure" href="{{ .image | relURL }}" data-research-name="{{ .short_name }}" aria-label="Enlarge the {{ .short_name }} figure" title="Enlarge figure">
+          <img src="{{ .image | relURL }}" alt="{{ .image_alt }}" width="{{ .image_width }}" height="{{ .image_height }}" loading="lazy" decoding="async">
+        </a>
+        <div class="research-card__body">
+          <h3 id="research-{{ .id }}"><a href="{{ .paper }}" title="{{ .title }}">{{ .short_name }}</a></h3>
+          <p class="research-meta"><span>{{ .venue }}</span>{{ with .award }}<span class="award-label">{{ . }}</span>{{ end }}</p>
+          <p class="research-summary">{{ .summary }}</p>
+          {{ partial "home/research-links.html" . }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="home-section news-section" aria-labelledby="news-title">
+    <div class="section-heading">
+      <h2 id="news-title">News</h2>
+      <a class="text-link" href="{{ "news/" | relURL }}">News archive <span aria-hidden="true">↗</span></a>
+    </div>
+    <ol class="news-list">
+      {{ range first 4 site.Data.news }}
+      <li><time datetime="{{ .date }}">{{ dateFormat "Jan 2006" (printf "%s-01" .date) }}</time><div>{{ .text | markdownify }}</div></li>
+      {{ end }}
+    </ol>
+  </section>
+
+  <section class="home-section lab-life-section" aria-labelledby="lab-life-title">
+    <div class="section-heading">
+      <h2 id="lab-life-title">Gallery</h2>
+      <a class="text-link" href="{{ "gallery/" | relURL }}">Explore Gallery <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="lab-life-grid">
+      {{- with site.GetPage "gallery" -}}
+        {{- $videos := slice -}}
+        {{- range where .Params.gallery "kind" "video" -}}
+          {{- if .external_url }}{{ $videos = $videos | append . }}{{ end -}}
+        {{- end -}}
+        {{- range first 2 $videos }}
+        <article class="home-video">
+          <a class="home-video-link" href="{{ .external_url }}" target="_blank" rel="noopener noreferrer" aria-label="Watch {{ .title }} on {{ .platform }} (opens in a new tab)">
+            <span class="home-video-media">
+              <img src="{{ .poster | relURL }}" loading="lazy" decoding="async" alt="{{ .alt }}">
+              <span class="home-video-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" focusable="false"><path d="m9 5 11 7-11 7Z" fill="currentColor"/></svg></span>
+            </span>
+            <div class="home-video-caption">
+              <h3>{{ .title }}</h3>
+              <span class="home-video-meta">Watch on {{ .platform }} <span aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+        </article>
+        {{- end -}}
+      {{- end }}
+    </div>
+  </section>
+
+  {{ with site.GetPage "partners" }}{{ .Content }}{{ end }}
+
+  <section class="join-section" aria-labelledby="join-title">
+    <div><h2 id="join-title">Join our lab</h2><p>Interested in fundamental AI research? We would love to hear from you.</p></div>
+    <a class="text-link" href="{{ "contact/" | relURL }}">Get in touch <span aria-hidden="true">→</span></a>
+  </section>
+</div>
+
+<dialog id="research-lightbox" class="research-lightbox" aria-labelledby="research-lightbox-title">
+  <div class="research-lightbox__header">
+    <h2 id="research-lightbox-title">Research figure</h2>
+    <button class="research-lightbox__close" type="button" data-research-close aria-label="Close image" autofocus>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <div class="research-lightbox__media"><img id="research-lightbox-image" alt=""></div>
+</dialog>
+<script src="{{ "js/research-lightbox.js" | relURL }}" defer></script>

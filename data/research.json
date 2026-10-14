@@ -1,0 +1,128 @@
+[
+  {
+    "id": "latentum",
+    "title": "LatentUM: Unleashing the Potential of Interleaved Cross-Modal Reasoning via a Latent-Space Unified Model",
+    "short_name": "LatentUM",
+    "venue": "NeurIPS 2026",
+    "award": "Oral",
+    "area": "Unified multimodal models",
+    "summary": "A unified latent-space model enables interleaved reasoning across text and images.",
+    "paper": "https://arxiv.org/pdf/2604.02097",
+    "code": "https://github.com/SJTU-DENG-Lab/LatentUM",
+    "blog": "",
+    "image": "/img/research/latentum.webp",
+    "image_alt": "LatentUM overview showing self-reflective text-to-image generation, visual spatial planning, and world modeling using shared semantic visual tokens.",
+    "image_width": 1800,
+    "image_height": 981,
+    "figure_source": {
+      "url": "https://arxiv.org/pdf/2604.02097",
+      "page": 2,
+      "figure": "Figure 1"
+    }
+  },
+  {
+    "id": "mbd",
+    "title": "Multi-Block Diffusion Language Models",
+    "short_name": "MBD-LMs",
+    "venue": "EMNLP 2026",
+    "award": "Oral",
+    "area": "Efficient language generation",
+    "summary": "Concurrent block decoding combines Multi-block Teacher Forcing with an efficient Block Buffer inference engine.",
+    "paper": "https://arxiv.org/pdf/2606.29215",
+    "code": "https://github.com/SJTU-DENG-Lab/MultiBD",
+    "blog": "/blogs/mbd/",
+    "image": "/img/research/mbd.webp",
+    "image_alt": "Single-block and multi-block diffusion timelines comparing sequential decoding with overlapping block refinement and KV-cache storage.",
+    "image_width": 1600,
+    "image_height": 542,
+    "figure_source": {
+      "url": "https://arxiv.org/pdf/2606.29215",
+      "page": 2,
+      "figure": "Figure 1"
+    }
+  },
+  {
+    "id": "world-language-action",
+    "title": "World-Language-Action Model for Unified World Modeling, Language Reasoning, and Action Synthesis",
+    "short_name": "World-Language-Action",
+    "venue": "CoRL 2026",
+    "award": "",
+    "area": "World models and embodied AI",
+    "summary": "A single model unifies world modeling, language reasoning, and action synthesis.",
+    "paper": "https://arxiv.org/pdf/2606.05979.pdf",
+    "code": "https://github.com/SJTU-DENG-Lab/WLA",
+    "blog": "",
+    "image": "/img/research/world-language-action.webp",
+    "image_alt": "WLA architecture overview comparing VLA and WAM with an autoregressive model that predicts textual intention and physical dynamics through world and action experts.",
+    "image_width": 1800,
+    "image_height": 649,
+    "figure_source": {
+      "url": "https://arxiv.org/pdf/2606.05979",
+      "page": 2,
+      "figure": "Figure 1"
+    }
+  },
+  {
+    "id": "lightningrl",
+    "title": "LightningRL: Breaking the Accuracy–Parallelism Trade-off of Block-wise dLLMs via Reinforcement Learning",
+    "short_name": "LightningRL",
+    "venue": "ICML 2026",
+    "award": "",
+    "area": "Efficient language generation",
+    "summary": "Reinforcement learning improves the accuracy–parallelism trade-off in block-wise diffusion language models.",
+    "paper": "https://arxiv.org/abs/2603.13319",
+    "code": "https://github.com/SJTU-DENG-Lab/LightningRL",
+    "blog": "",
+    "image": "/img/research/lightningrl.webp",
+    "image_alt": "LightningRL overview showing policy optimization, sampling and rewards, and a shift toward faster correct decoding trajectories.",
+    "image_width": 1600,
+    "image_height": 897,
+    "figure_source": {
+      "url": "https://arxiv.org/pdf/2603.13319",
+      "page": 3,
+      "figure": "Figure 2"
+    }
+  },
+  {
+    "id": "orthus",
+    "title": "Orthus: Autoregressive Interleaved Image-Text Generation with Modality-Specific Heads",
+    "short_name": "Orthus",
+    "venue": "ICML 2025",
+    "award": "",
+    "area": "Unified multimodal models",
+    "summary": "A shared autoregressive transformer generates interleaved text and images through modality-specific heads.",
+    "paper": "https://arxiv.org/pdf/2412.00127",
+    "code": "https://github.com/SJTU-DENG-Lab/Orthus",
+    "blog": "",
+    "image": "/img/research/orthus.webp",
+    "image_alt": "Orthus architecture with text and image embeddings, a shared autoregressive transformer, and language and diffusion output heads.",
+    "image_width": 1600,
+    "image_height": 584,
+    "figure_source": {
+      "url": "https://arxiv.org/pdf/2412.00127",
+      "page": 4,
+      "figure": "Figure 2"
+    }
+  },
+  {
+    "id": "mantis",
+    "title": "Mantis: A Versatile Vision-Language-Action Model with Disentangled Visual Foresight",
+    "short_name": "Mantis",
+    "venue": "CVPR 2026",
+    "award": "",
+    "area": "World models and embodied AI",
+    "summary": "A vision–language–action model uses disentangled visual foresight to connect prediction and action.",
+    "paper": "https://arxiv.org/pdf/2511.16175",
+    "code": "https://github.com/SJTU-DENG-Lab/Mantis",
+    "blog": "",
+    "image": "/img/research/mantis.webp",
+    "image_alt": "Mantis paper teaser showing its human-video, robot-demonstration and multimodal data sources, disentangled visual foresight, adaptive temporal ensemble, and embodied reasoning examples.",
+    "image_width": 1800,
+    "image_height": 884,
+    "figure_source": {
+      "url": "https://arxiv.org/pdf/2511.16175",
+      "page": 1,
+      "figure": "Unnumbered first-page teaser"
+    }
+  }
+]

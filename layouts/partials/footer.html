@@ -1,0 +1,79 @@
+{{- if not (.Param "hideFooter") }}
+<footer class="footer site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <a class="site-footer__logo" href="{{ "" | absLangURL }}" aria-label="DENG Lab homepage">
+        <img src="{{ "img/lab/logo.svg" | relURL }}" alt="DENG Lab @ SJTU" width="1177" height="460" loading="lazy">
+      </a>
+      <p class="site-footer__description">School of Computer Science<br>Shanghai Jiao Tong University</p>
+    </div>
+
+    <nav class="site-footer__links" aria-label="Explore the lab">
+      <p class="site-footer__label">Explore</p>
+      <a href="{{ "gallery/" | relURL }}">Gallery <span aria-hidden="true">↗</span></a>
+      <a href="{{ "news/" | relURL }}">News <span aria-hidden="true">↗</span></a>
+      <a href="{{ "contact/" | relURL }}">Join the lab <span aria-hidden="true">↗</span></a>
+    </nav>
+
+    <div class="site-footer__links site-footer__connect">
+      <p class="site-footer__label">Connect</p>
+      <a href="https://thudzj.github.io/" target="_blank" rel="noopener noreferrer">Prof. Zhijie Deng <span aria-hidden="true">↗</span></a>
+      <a href="mailto:zhijied@sjtu.edu.cn">zhijied@sjtu.edu.cn <span aria-hidden="true">↗</span></a>
+      <div class="site-footer__social" aria-label="Social links">
+        <a class="site-footer__social-link site-footer__social-link--xiaohongshu" href="https://www.xiaohongshu.com/user/profile/5cf3f0780000000010036f4a" target="_blank" rel="noopener noreferrer" aria-label="DENG Lab 小红书" title="DENG Lab 小红书"><img src="{{ "img/social/xiaohongshu.svg" | relURL }}" width="34" height="34" alt="" aria-hidden="true"></a>
+        <a class="site-footer__social-link site-footer__social-link--zhihu" href="https://www.zhihu.com/people/SJTUDengLab" target="_blank" rel="noopener noreferrer" aria-label="知乎" title="知乎"><img src="{{ "img/social/zhihu.svg" | relURL }}" width="34" height="34" alt="" aria-hidden="true"></a>
+        <a class="site-footer__social-link" href="https://github.com/SJTU-DENG-Lab" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+        <a class="site-footer__social-link" href="https://x.com/sjtudenglab" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" title="Twitter / X"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer__bottom">
+    <span>&copy; <a href="{{ "" | absLangURL }}">DENG Lab @ SJTU</a></span>
+    <span>Shanghai, China</span>
+  </div>
+</footer>
+{{- end }}
+
+{{- if (not site.Params.disableScrollToTop) }}
+<a href="#top" aria-label="Back to top" title="Back to top (Alt + G)" class="top-link" id="top-link" accesskey="g" aria-hidden="true" tabindex="-1" hidden>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5m-6 6 6-6 6 6" /></svg>
+</a>
+<script>
+  (function () {
+    var topLink = document.getElementById("top-link");
+    if (!topLink) return;
+    var footer = document.querySelector(".site-footer");
+    var updatePending = false;
+    var updateTopLink = function () {
+      var footerBounds = footer ? footer.getBoundingClientRect() : null;
+      var footerVisible = footerBounds && footerBounds.top < window.innerHeight && footerBounds.bottom > 0;
+      var visible = window.scrollY > 800 && !footerVisible;
+      topLink.hidden = !visible;
+      topLink.setAttribute("aria-hidden", visible ? "false" : "true");
+      topLink.tabIndex = visible ? 0 : -1;
+      // Override display rules so a hidden control cannot overlap the footer.
+      topLink.style.display = visible ? "" : "none";
+      topLink.style.visibility = visible ? "visible" : "hidden";
+      topLink.style.opacity = visible ? "1" : "0";
+    };
+    var scheduleUpdate = function () {
+      if (updatePending) return;
+      updatePending = true;
+      window.requestAnimationFrame(function () {
+        updatePending = false;
+        updateTopLink();
+      });
+    };
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    window.addEventListener("load", scheduleUpdate);
+    if (footer && "IntersectionObserver" in window) {
+      new IntersectionObserver(scheduleUpdate).observe(footer);
+    }
+    updateTopLink();
+  })();
+</script>
+{{- end }}
+
+{{- partial "extend_footer.html" . }}

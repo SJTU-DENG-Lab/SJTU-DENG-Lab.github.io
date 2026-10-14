@@ -1,0 +1,22 @@
+<link rel="preload" href="{{ "fonts/inter-variable.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ "css/partners.css" | relURL }}">
+{{- if eq .Params.layout "people" -}}
+{{- $teamCSS := resources.Get "css/team.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $teamCSS.RelPermalink }}" integrity="{{ $teamCSS.Data.Integrity }}">
+{{- end -}}
+{{- if eq .Params.layout "contact" -}}
+{{- $joinCSS := resources.Get "css/join.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $joinCSS.RelPermalink }}" integrity="{{ $joinCSS.Data.Integrity }}">
+{{- end -}}
+{{- if and .IsSection (eq .Type "blogs") -}}
+{{- $blogsCSS := resources.Get "css/blogs.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $blogsCSS.RelPermalink }}" integrity="{{ $blogsCSS.Data.Integrity }}">
+{{- end -}}
+{{- if eq .Type "gallery" -}}
+{{- $galleryCSS := resources.Get "css/gallery.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $galleryCSS.RelPermalink }}" integrity="{{ $galleryCSS.Data.Integrity }}">
+{{- end -}}
+{{- if eq .Params.layout "publications" -}}
+{{- $publicationsCSS := resources.Get "css/publications.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $publicationsCSS.RelPermalink }}" integrity="{{ $publicationsCSS.Data.Integrity }}">
+{{- end -}}

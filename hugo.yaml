@@ -29,10 +29,15 @@ markup:
         enable: true
 params:
   env: production
+  # Keep RSS metadata compatible with Hugo >= 0.158, where site.Author was removed.
+  author: 'DENG Lab @ SJTU'
+  description: 'Efficient generative AI across language, vision, and action at Shanghai Jiao Tong University.'
+  images: ['/img/lab/team-1280.webp']
   math: true
   label:
-    icon: "/img/logo-new.png"
+    icon: "/img/lab/logo.svg"
   assets:
+    favicon: '/favicon.svg'
     css:
       - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
   # Define social params to avoid deprecated .Site.Social usage in Hugo >= 0.124
@@ -52,32 +57,26 @@ menu:
   main:
     - identifier: Home
       name: Home
-      url: /home/
+      url: /
       weight: 10
     - identifier: Blogs
       name: Blogs
       url: /blogs/
-      weight: 30
-    - identifier: People
-      name: People
+      weight: 40
+    - identifier: Team
+      name: Team
       url: /people/
-      weight: 50
+      weight: 30
+    - identifier: Gallery
+      name: Gallery
+      url: /gallery/
+      weight: 35
     - identifier: Publications
       name: Publications
       url: /publications/
-      weight: 60
+      weight: 20
     - identifier: Contact
-      name: Contact
+      name: Join Us
       url: /contact/
-      weight: 70
-    - name: "Twitter"
-      url: "https://x.com/sjtudenglab"
-      weight: 100
-    - name: "Zhihu"
-      url: "https://www.zhihu.com/people/SJTUDengLab"
-      weight: 120
-    - name: "GitHub"
-      url: "https://github.com/SJTU-DENG-Lab"
-      weight: 120
-    
+      weight: 60
     

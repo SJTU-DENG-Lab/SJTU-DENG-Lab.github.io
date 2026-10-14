@@ -1,0 +1,63 @@
+{{ define "main" }}
+{{- $items := .Params.gallery | default (slice) -}}
+{{- $galleryJS := resources.Get "js/gallery.js" | minify | fingerprint -}}
+<script src="{{ $galleryJS.RelPermalink }}" integrity="{{ $galleryJS.Data.Integrity }}" defer></script>
+
+<div class="gallery-page">
+  <header class="gallery-heading">
+    <h1>{{ .Title }}</h1>
+    <p>People, research, and time together.</p>
+  </header>
+
+  {{- with where $items "kind" "photo" }}
+    {{- $photoCount := len . -}}
+    <section class="gallery-section" id="photos" aria-labelledby="gallery-photos-title" aria-roledescription="carousel" data-gallery-album>
+      <div class="gallery-section-heading">
+        <h2 id="gallery-photos-title">Photos</h2>
+      </div>
+      <div class="gallery-album-stage">
+        <div class="gallery-album-controls" data-gallery-controls hidden>
+          <span class="gallery-sr-only" data-gallery-counter aria-live="off" aria-atomic="true">Photo <span data-gallery-position>01</span> of <span data-gallery-total>{{ printf "%02d" (len .) }}</span></span>
+          <button class="gallery-album-toggle" type="button" data-gallery-autoplay aria-label="Play automatic slideshow" aria-controls="gallery-grid">
+            <svg data-gallery-play-icon viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7Z" fill="currentColor"/></svg>
+            <svg data-gallery-pause-icon viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M7 5h4v14H7zm6 0h4v14h-4z" fill="currentColor"/></svg>
+          </button>
+          <button class="gallery-album-arrow gallery-album-arrow--previous" type="button" data-gallery-prev aria-label="Previous photo" aria-controls="gallery-grid"><svg viewBox="0 0 24 40" aria-hidden="true"><path d="M20 4 4 20l16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button class="gallery-album-arrow gallery-album-arrow--next" type="button" data-gallery-next aria-label="Next photo" aria-controls="gallery-grid"><svg viewBox="0 0 24 40" aria-hidden="true"><path d="m4 4 16 16L4 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="gallery-album-dots" role="group" aria-label="Choose a photo">
+            {{- range $index, $item := . }}
+              <button type="button" data-gallery-dot="{{ $index }}" aria-label="Show photo {{ add $index 1 }} of {{ $photoCount }}" aria-controls="gallery-grid" aria-current="{{ if eq $index 0 }}true{{ else }}false{{ end }}"><span aria-hidden="true"></span></button>
+            {{- end }}
+          </div>
+        </div>
+        <div class="gallery-photo-track" id="gallery-grid" data-gallery-track tabindex="0" role="group" aria-label="Lab photos">
+          {{- range $index, $item := . -}}
+            {{- partial "gallery/card.html" (merge $item (dict "loading" (cond (eq $index 0) "eager" "lazy"))) -}}
+          {{- end }}
+        </div>
+      </div>
+    </section>
+  {{- end }}
+
+  {{- with where $items "kind" "video" }}
+    <section class="gallery-section" id="videos" aria-labelledby="gallery-videos-title">
+      <div class="gallery-section-heading"><h2 id="gallery-videos-title">Videos</h2></div>
+      <div class="gallery-grid">
+        {{- range . -}}{{- partial "gallery/card.html" . -}}{{- end }}
+      </div>
+    </section>
+  {{- end }}
+</div>
+
+<div class="gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-labelledby="galleryLightboxTitle" aria-hidden="true" tabindex="-1" hidden>
+  <button class="gallery-lightbox__backdrop" type="button" data-gallery-close tabindex="-1" aria-label="Close media viewer"></button>
+  <div class="gallery-lightbox__panel">
+    <button class="gallery-lightbox__close" type="button" data-gallery-close aria-label="Close media viewer">×</button>
+    <div class="gallery-lightbox__media" id="galleryLightboxMedia"></div>
+    <div class="gallery-lightbox__details">
+      <p id="galleryLightboxMeta"></p>
+      <h2 id="galleryLightboxTitle"></h2>
+    </div>
+  </div>
+</div>
+{{ end }}

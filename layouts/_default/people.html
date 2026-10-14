@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="team-page">
+  <header class="team-heading">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </header>
+  <div class="post-content team-content">
+    {{ partial "anchored_headings.html" .Content }}
+  </div>
+</article>
+{{ end }}

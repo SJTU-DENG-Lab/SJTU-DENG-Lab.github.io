@@ -1,0 +1,138 @@
+[
+  {
+    "name": "Zhijie Deng",
+    "file": "dzj.jpg",
+    "homepage": "https://thudzj.github.io/",
+    "source_image": "https://thudzj.github.io/files/WechatIMG113.jpg",
+    "kind": "photo",
+    "verified_on": "2026-10-12",
+    "note": "The existing local image matches the homepage source byte-for-byte."
+  },
+  {
+    "name": "Siqi Kou",
+    "file": "siqi-kou.jpg",
+    "homepage": "https://karrykkk.github.io/",
+    "source_image": "https://karrykkk.github.io/images/profile.png",
+    "kind": "photo",
+    "verified_on": "2026-10-12",
+    "note": "The source file is JPEG despite its .png URL; original bytes are preserved."
+  },
+  {
+    "name": "Jiachun Jin",
+    "file": "jiachun-jin.jpeg",
+    "homepage": "https://jiachunjin.github.io/",
+    "source_image": "https://jiachunjin.github.io/assets/imgs/atm.jpeg",
+    "kind": "illustration",
+    "verified_on": "2026-10-12",
+    "note": "The illustrated avatar from the personal homepage, not a photograph. Retained locally; the Team page uses the shared unknown.jpg placeholder at the user's request from 2026-10-13."
+  },
+  {
+    "name": "Yijie Jin",
+    "file": "yijie-jin.jpg",
+    "homepage": "https://drewjin.github.io/",
+    "source_image": "https://drewjin.github.io/assets/img/prof_pic.jpg?v=7b4cfa88fbeb9b7197813ba4bdb63f8a",
+    "kind": "photo",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "name": "Zetong Zhou",
+    "file": "zetong-zhou.jpg",
+    "homepage": "https://ls-kelvin.github.io/",
+    "source": "user-provided",
+    "kind": "photo",
+    "provided_on": "2026-10-12",
+    "note": "User-supplied photo replaces the previous homepage illustration."
+  },
+  {
+    "name": "Chenkai Xu",
+    "file": "chenkai-xu.jpg",
+    "homepage": "https://xuchenkai1.github.io/index.html",
+    "source_image": "https://xuchenkai1.github.io/images/avatar.jpg",
+    "kind": "photo",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "name": "Yanzhe Hu",
+    "file": "yanzhe-hu.png",
+    "homepage": "https://alexhu-1215.github.io/Alex/",
+    "source_image": "https://alexhu-1215.github.io/Alex/images/yanzhe-hu.png?v=68c655ed",
+    "kind": "photo",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "name": "Zhihong Liu",
+    "file": "zhihong-liu.jpg",
+    "source": "user-provided",
+    "kind": "photo",
+    "provided_on": "2026-10-12"
+  },
+  {
+    "name": "Jianbo Zhou",
+    "file": "jianbo-zhou.jpg",
+    "source": "user-provided",
+    "kind": "photo",
+    "provided_on": "2026-10-12"
+  },
+  {
+    "name": "Jiayin Chen",
+    "file": "jiayin_chen.jpg",
+    "source": "user-provided",
+    "kind": "photo",
+    "provided_on": "2026-10-12",
+    "note": "The user confirmed the name and PhD Student role."
+  },
+  {
+    "name": "Xiao Xia",
+    "file": "xiao-xia.jpg",
+    "source": "user-provided",
+    "kind": "photo",
+    "provided_on": "2026-10-12",
+    "note": "The user confirmed the name and Visiting Scholar role."
+  },
+  {
+    "name": "Qirui Zhang",
+    "file": "qirui-zhang.jpg",
+    "source": "user-provided",
+    "kind": "photo",
+    "provided_on": "2026-10-12"
+  },
+  {
+    "name": "Yuji Ren",
+    "file": "yuji-ren.jpg",
+    "homepage": "https://ren-yuji.github.io/",
+    "source_image": "https://ren-yuji.github.io/files/mypic.jpg",
+    "kind": "photo",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "name": "Jiajun Xu",
+    "file": "jiajun-xu.jpg",
+    "source": "user-provided",
+    "kind": "photo",
+    "provided_on": "2026-10-12"
+  },
+  {
+    "name": "Xiang Li",
+    "file": "xiang-li.jpg",
+    "source": "user-provided",
+    "kind": "photo",
+    "provided_on": "2026-10-12"
+  },
+  {
+    "name": "Yunchao Ke",
+    "file": "yunchao-ke.jpeg",
+    "source": "user-provided",
+    "kind": "photo",
+    "provided_on": "2026-10-13",
+    "note": "The user confirmed the name and Undergrad Student role."
+  },
+  {
+    "name": "Yuxuan Liu",
+    "file": "yuxuan-liu.jpg",
+    "homepage": "https://osc-7.github.io/",
+    "source_image": "https://osc-7.github.io/images/avatar.png",
+    "kind": "photo",
+    "verified_on": "2026-10-14",
+    "note": "The personal homepage identifies Yuxuan Liu as an undergraduate researcher at DENG Lab. The source file is JPEG despite its .png URL; original bytes are preserved."
+  }
+]

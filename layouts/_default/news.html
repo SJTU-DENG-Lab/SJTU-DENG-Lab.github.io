@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article class="news-archive">
+  <header class="archive-heading"><p class="eyebrow">DENG LAB / UPDATES</p><h1>News archive.</h1><p>Research, milestones, and announcements from the lab.</p></header>
+  {{ $years := slice }}{{ range site.Data.news }}{{ $years = $years | append .year }}{{ end }}
+  {{ range sort (uniq $years) "value" "desc" }}
+  {{ $items := where site.Data.news "year" . }}{{ if $items }}
+  <section class="archive-year" aria-labelledby="year-{{ . }}"><h2 id="year-{{ . }}">{{ . }}</h2><ol class="news-list">{{ range $items }}<li><time datetime="{{ .date }}">{{ dateFormat "Jan 2006" (printf "%s-01" .date) }}</time><div>{{ .text | markdownify }}</div></li>{{ end }}</ol></section>
+  {{ end }}{{ end }}
+</article>
+{{ end }}

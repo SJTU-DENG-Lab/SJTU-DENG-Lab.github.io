@@ -1,45 +1,46 @@
-<head>
-    <!-- Other head elements -->
-    <style>
-        .lab-member img,
-        .lab-member h3,
-        .lab-member p,
-        .lab-member .social-links {
-            margin-top: 0; /* Reduces space above the element */
-            margin-bottom: 0px; /* Reduces space below the element, adjust as needed */
-        }
-        .lab-member h3 {
-            font-size: 1.0rem; /* Adjust the font size as needed */
-        }
-        .lab-member p, .lab-member .social-links {
-            font-size: 1.0rem; /* Adjust the font size as needed */
-        }
-        .lab-member {
-            display: grid; /* Enables the use of CSS Grid layout */
-        }
-
-        .lab-member img {
-            width: 100%; /* Ensures the image takes the full width of its container */
-            height: auto; /* Maintains the image's aspect ratio */
-            aspect-ratio: 1 / 1; /* Adjust this value to change the aspect ratio */
-            object-fit: cover; /* Ensures the image covers the area, cropping as necessary */
-        }
-    </style>
-</head>
-
-<div class="lab-member">
-    <img src="/img/members/{{ .Get "image" }}" alt="{{ .Get "name" }}" style="lab-member">
-    <h3>{{ .Get "name" }}</h3>
-    <p>{{ .Get "role" }}</p>
-    <div class="social-links">
-        {{ if .Get "twitter" }}
-        <a href="{{ .Get "twitter" }}"><i class="fab fa-twitter"></i></a>
-        {{ end }}
-        {{ if .Get "academic" }}
-        <a href="{{ .Get "academic" }}"><i class="fas fa-home"></i></a>
-        {{ end }}
-        {{ if .Get "linkedin" }}
-            <a href="{{ .Get "linkedin" }}"><i class="fab fa-linkedin"></i></a>
-        {{ end }}
+{{- $name := .Get "name" -}}
+{{- $academic := strings.TrimSpace (.Get "academic" | default "") -}}
+{{- $academicHost := lower (urls.Parse $academic).Host -}}
+{{- $hasAcademic := and (ne $academic "") (ne $academic "#") -}}
+{{- $isScholar := gt (len (findRE "^scholar\\.google\\.[a-z.]+$" $academicHost)) 0 -}}
+{{- $isOpenReview := or (eq $academicHost "openreview.net") (strings.HasSuffix $academicHost ".openreview.net") -}}
+{{- $hasHomepage := and $hasAcademic (not $isScholar) (not $isOpenReview) -}}
+{{- $twitter := strings.TrimSpace (.Get "twitter" | default "") -}}
+{{- $linkedin := strings.TrimSpace (.Get "linkedin" | default "") -}}
+{{- $hasTwitter := and (ne $twitter "") (ne $twitter "#") -}}
+{{- $hasLinkedIn := and (ne $linkedin "") (ne $linkedin "#") -}}
+{{- $file := .Get "image" -}}
+{{- $portrait := resources.FromString (printf "portraits/%s" $file) (readFile (printf "static/img/members/%s" $file)) -}}
+{{- $thumbnail := $portrait -}}
+{{- if gt $portrait.Width 400 -}}
+  {{- $thumbnail = $portrait.Resize "400x webp q85" -}}
+{{- else -}}
+  {{- $thumbnail = $portrait.Process "webp q85" -}}
+{{- end -}}
+<div class="lab-member{{ if $hasHomepage }} lab-member--linked{{ end }}">
+  {{- if $hasHomepage }}
+  <a class="member-profile" href="{{ $academic }}" aria-label="{{ $name }} homepage">
+  {{- else }}
+  <div class="member-profile">
+  {{- end }}
+    <div class="member-portrait">
+      <img class="member-photo" src="{{ $thumbnail.RelPermalink }}" alt="{{ $name }}" width="200" height="200" loading="lazy" decoding="async" style="{{ printf "--member-image-scale: %v; --member-image-origin: %s; object-fit: %s; object-position: %s;" (.Get "image_scale" | default 1) (.Get "image_position" | default "50% 50%") (.Get "image_fit" | default "cover") (.Get "image_position" | default "50% 50%") | safeCSS }}">
     </div>
+    <div class="member-identity">
+      <h3><span class="member-name-text">{{ $name }}</span>{{ if $hasHomepage }} <span class="member-arrow" aria-hidden="true">↗</span>{{ end }}</h3>
+      {{- with .Get "role" }}<p>{{ . }}</p>{{ end }}
+    </div>
+  {{- if $hasHomepage }}
+  </a>
+  {{- else }}
+  </div>
+  {{- end }}
+  {{- if or $isScholar $isOpenReview $hasTwitter $hasLinkedIn }}
+  <div class="member-links">
+    {{- if $isScholar }}<a href="{{ $academic }}" aria-label="{{ $name }} on Google Scholar">Scholar</a>{{ end }}
+    {{- if $isOpenReview }}<a href="{{ $academic }}" aria-label="{{ $name }} on OpenReview">OpenReview</a>{{ end }}
+    {{- if $hasTwitter }}<a href="{{ $twitter }}" aria-label="{{ $name }} on Twitter">Twitter</a>{{ end }}
+    {{- if $hasLinkedIn }}<a href="{{ $linkedin }}" aria-label="{{ $name }} on LinkedIn">LinkedIn</a>{{ end }}
+  </div>
+  {{- end }}
 </div>
