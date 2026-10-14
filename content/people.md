@@ -43,7 +43,7 @@ math: false
 
 {{< lab_member name="Chenkai Xu" role="Master Student" image="chenkai-xu.jpg" image_position="50% 75%" academic="https://xuchenkai1.github.io/index.html">}}
 
-{{< lab_member name="Yiyang Chen" role="Master Student" image="unknown.jpg" academic="#">}}
+{{< lab_member name="Yiyang Chen" role="Master Student" image="yiyang-chen.jpg" image_position="50% 0%" academic="#">}}
 
 <!-- {{< lab_member name="Yu Lei" role="Undergrad Student" image="unknown.jpg" academic="https://theknight-z.github.io/">}} -->
 
