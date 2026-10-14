@@ -18,6 +18,13 @@
     "note": "The source file is JPEG despite its .png URL; original bytes are preserved."
   },
   {
+    "name": "Yi Yang",
+    "file": "yang-yi.jpg",
+    "source": "user-provided",
+    "kind": "photo",
+    "provided_on": "2026-10-14"
+  },
+  {
     "name": "Jiachun Jin",
     "file": "jiachun-jin.jpeg",
     "homepage": "https://jiachunjin.github.io/",
