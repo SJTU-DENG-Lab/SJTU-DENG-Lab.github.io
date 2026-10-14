@@ -23,9 +23,9 @@ math: false
 
 {{< lab_member name="Siqi Kou" role="PhD Student" image="siqi-kou.jpg" image_position="50% 60%" academic="https://karrykkk.github.io/">}}
 
-{{< lab_member name="Yi Yang" role="PhD Student" image="yang-yi.jpg" image_position="50% 80%" academic="https://scholar.google.com/citations?user=FXKS8AMAAAAJ&hl=en">}}
-
 {{< lab_member name="Jiachun Jin" role="PhD Student" image="jiachun-jin.jpg" image_fit="contain" academic="https://jiachunjin.github.io/">}}
+
+{{< lab_member name="Yi Yang" role="PhD Student" image="yang-yi.jpg" image_position="50% 80%" academic="https://scholar.google.com/citations?user=FXKS8AMAAAAJ&hl=en">}}
 
 {{< lab_member name="Zhihong Liu" role="PhD Student" image="zhihong-liu.jpg" academic="#">}}
 
