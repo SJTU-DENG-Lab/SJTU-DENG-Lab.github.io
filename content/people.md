@@ -25,7 +25,7 @@ math: false
 
 {{< lab_member name="Yi Yang" role="PhD Student" image="yang-yi.jpg" image_position="50% 80%" academic="https://scholar.google.com/citations?user=FXKS8AMAAAAJ&hl=en">}}
 
-{{< lab_member name="Jiachun Jin" role="PhD Student" image="unknown.jpg" academic="https://jiachunjin.github.io/">}}
+{{< lab_member name="Jiachun Jin" role="PhD Student" image="jiachun-jin.jpg" image_fit="contain" academic="https://jiachunjin.github.io/">}}
 
 {{< lab_member name="Zhihong Liu" role="PhD Student" image="zhihong-liu.jpg" academic="#">}}
 
@@ -35,9 +35,9 @@ math: false
 
 {{< lab_member name="Zetong Zhou" role="PhD Student" image="zetong-zhou.jpg" image_position="50% 100%" image_scale="1.30" academic="https://ls-kelvin.github.io/">}}
 
-{{< lab_member name="Xu Wang" role="Master Student" image="unknown.jpg" academic="#">}}
+{{< lab_member name="Xu Wang" role="Master Student" image="xu-wang.png" academic="#">}}
 
-{{< lab_member name="Hanwen Xu" role="Master Student" image="unknown.jpg" academic="https://scholar.google.com/citations?user=nuA_AJcAAAAJ&hl=zh-CN">}}
+{{< lab_member name="Hanwen Xu" role="Master Student" image="hanwen-xu.jpeg" image_position="40% 100%" image_scale="1.60" academic="https://scholar.google.com/citations?user=nuA_AJcAAAAJ&hl=zh-CN">}}
 
 {{< lab_member name="Xuyao Huang" role="Master Student" image="unknown.jpg" academic="https://openreview.net/profile?id=~Xuyao_Huang1">}}
 

@@ -26,12 +26,25 @@
   },
   {
     "name": "Jiachun Jin",
-    "file": "jiachun-jin.jpeg",
+    "file": "jiachun-jin.jpg",
     "homepage": "https://jiachunjin.github.io/",
-    "source_image": "https://jiachunjin.github.io/assets/imgs/atm.jpeg",
-    "kind": "illustration",
-    "verified_on": "2026-10-12",
-    "note": "The illustrated avatar from the personal homepage, not a photograph. Retained locally; the Team page uses the shared unknown.jpg placeholder at the user's request from 2026-10-13."
+    "source": "user-provided",
+    "kind": "photo",
+    "provided_on": "2026-10-14"
+  },
+  {
+    "name": "Xu Wang",
+    "file": "xu-wang.png",
+    "source": "user-provided",
+    "kind": "photo",
+    "provided_on": "2026-10-14"
+  },
+  {
+    "name": "Hanwen Xu",
+    "file": "hanwen-xu.jpeg",
+    "source": "user-provided",
+    "kind": "photo",
+    "provided_on": "2026-10-14"
   },
   {
     "name": "Yijie Jin",
