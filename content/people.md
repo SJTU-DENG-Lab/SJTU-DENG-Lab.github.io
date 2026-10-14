@@ -69,7 +69,7 @@ math: false
 
 <!-- {{< lab_member name="Yuhan Cao" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
 
-{{< lab_member name="Lianguan Feng" role="Undergrad Student" image="unknown.jpg" academic="#">}}
+{{< lab_member name="Lianguan Feng" role="Undergrad Student" image="lianguan-feng.jpeg" image_position="50% 25%" academic="#">}}
 
 <!-- {{< lab_member name="Yongchen Zhao" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
 
