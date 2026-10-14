@@ -33,7 +33,7 @@ math: false
 
 <!-- {{< lab_member name="Yugang Wang" role="Incoming PhD Student" image="unknown.jpg" academic="#">}} -->
 
-{{< lab_member name="Zetong Zhou" role="PhD Student" image="zetong-zhou.jpg" image_position="50% 100%" image_scale="1.30" academic="https://ls-kelvin.github.io/">}}
+{{< lab_member name="Zetong Zhou" role="PhD Student" image="zetong-zhou.jpg" image_position="50% 100%" image_scale="1.30">}}
 
 {{< lab_member name="Xu Wang" role="Master Student" image="xu-wang.png" academic="#">}}
 
