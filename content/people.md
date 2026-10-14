@@ -81,7 +81,7 @@ math: false
 
 {{< lab_member name="Jiajun Xu" role="Undergrad Student" image="jiajun-xu.jpg" image_position="50% 25%" academic="#">}}
 
-{{< lab_member name="Ningyi Hu" role="Undergrad Student" image="unknown.jpg" academic="#">}}
+{{< lab_member name="Ningyi Hu" role="Undergrad Student" image="ningyi-hu.jpeg" image_position="50% 40%" academic="#">}}
 
 {{< lab_member name="Qirui Zhang" role="Undergrad Student" image="qirui-zhang.jpg" image_position="50% 50%" image_scale="1.20">}}
 

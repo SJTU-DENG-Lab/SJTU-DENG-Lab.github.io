@@ -127,6 +127,13 @@
     "note": "The user confirmed the name and Undergrad Student role."
   },
   {
+    "name": "Ningyi Hu",
+    "file": "ningyi-hu.jpeg",
+    "source": "user-provided",
+    "kind": "photo",
+    "provided_on": "2026-10-14"
+  },
+  {
     "name": "Yuxuan Liu",
     "file": "yuxuan-liu.jpg",
     "homepage": "https://osc-7.github.io/",
