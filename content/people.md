@@ -39,7 +39,7 @@ math: false
 
 {{< lab_member name="Hanwen Xu" role="Master Student" image="hanwen-xu.jpeg" image_position="40% 100%" image_scale="1.60" academic="https://scholar.google.com/citations?user=nuA_AJcAAAAJ&hl=zh-CN">}}
 
-{{< lab_member name="Xuyao Huang" role="Master Student" image="unknown.jpg" academic="https://openreview.net/profile?id=~Xuyao_Huang1">}}
+{{< lab_member name="Xuyao Huang" role="Master Student" image="xuyao-huang.jpg" image_position="0% 0%" image_scale="1.15" academic="https://openreview.net/profile?id=~Xuyao_Huang1">}}
 
 {{< lab_member name="Chenkai Xu" role="Master Student" image="chenkai-xu.jpg" image_position="50% 75%" academic="https://xuchenkai1.github.io/index.html">}}
 
@@ -59,7 +59,7 @@ math: false
 
 {{< lab_member name="Jianbo Zhou" role="Undergrad Student" image="jianbo-zhou.jpg" image_position="50% 50%" image_scale="1.30" academic="https://openreview.net/profile?id=~Jianbo_Zhou1">}}
 
-{{< lab_member name="Zheng Li" role="Undergrad Student" image="unknown.jpg" academic="#">}}
+{{< lab_member name="Zheng Li" role="Undergrad Student" image="zheng-li.jpg" image_position="50% 10%" academic="https://yukinoleo.github.io/">}}
 
 <!-- {{< lab_member name="Chuanyu Zhou" role="Undergrad Student" image="unknown.jpg" academic="#">}} -->
 
